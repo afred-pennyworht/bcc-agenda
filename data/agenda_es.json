@@ -1,0 +1,335 @@
+{
+  "conference": "Barcelona Cyphers Conference 2026",
+  "labels": {
+    "day1_label": "Viernes 29 de Mayo",
+    "day2_label": "Sábado 30 de Mayo",
+    "talk": "Charla",
+    "keynote": "Keynote",
+    "panel": "Panel",
+    "workshop": "Workshop",
+    "break": "Descanso",
+    "lunch": "Comida",
+    "opening": "Acreditación y bienvenida",
+    "closing": "Cierre de la conferencia",
+    "bbq": "CypherPunk Barbecue — parrilla al fuego, bebidas locales, música en vivo, networking",
+    "bbq_title": "Barbacoa & Fiesta",
+    "plenary": "Plenaria",
+    "room_b": "Sala B",
+    "schedule": "Programa",
+    "speaker": "Ponente",
+    "language": "Idioma",
+    "block": "Bloque",
+    "parallel_ws": "Workshops en paralelo"
+  },
+  "days": [
+    {
+      "date": "2026-05-29",
+      "label": "Viernes 29 de Mayo",
+      "sessions": [
+        {
+          "time": "09:00-09:30",
+          "type": "Acreditación y bienvenida",
+          "title": "Acreditación y bienvenida"
+        },
+        {
+          "time": "09:30-09:50",
+          "type": "Keynote",
+          "title": "You're The Voice",
+          "speaker": "Efrat Fenigson",
+          "language": "EN"
+        },
+        {
+          "time": "09:50-10:15",
+          "type": "Charla",
+          "title": "GALT GULCH digital",
+          "speaker": "Counterweight",
+          "language": "ES",
+          "block": "Bitcoin I",
+          "parallel_ws": {
+            "title": "Defense — live demo",
+            "speaker": "Wesatoshi",
+            "language": "EN"
+          }
+        },
+        {
+          "time": "10:15-10:40",
+          "type": "Charla",
+          "title": "Adopción empresas, pagos, Ark",
+          "speaker": "Kilian Rausch",
+          "language": "ES/EN",
+          "block": "Bitcoin I",
+          "parallel_ws": {
+            "title": "Fedimint dev workshop",
+            "speaker": "Oz",
+            "language": "ES/EN"
+          }
+        },
+        {
+          "time": "10:40-11:05",
+          "type": "Charla",
+          "title": "BIP-110 y el fork de Bitcoin",
+          "speaker": "Marcellus",
+          "language": "ES",
+          "block": "Bitcoin I"
+        },
+        {
+          "time": "11:05-11:30",
+          "type": "Descanso",
+          "title": "Descanso"
+        },
+        {
+          "time": "11:30 - 13:50 (140 min)",
+          "type": "Charla",
+          "title": "Préstamos colateralizados / Firefish",
+          "speaker": "Losku",
+          "language": "ES",
+          "block": "Bitcoin II",
+          "sponsored": true,
+          "parallel_ws": {
+            "title": "WS Slot 2: 11:30-13:00",
+            "speaker": "Marcellus",
+            "language": "ES |"
+          }
+        },
+        {
+          "time": "11:55-12:20",
+          "type": "Charla",
+          "title": "Rewind Bitcoin: wallet con scripts",
+          "speaker": "Landabaso",
+          "language": "ES",
+          "block": "Bitcoin II",
+          "sponsored": true
+        },
+        {
+          "time": "12:20-12:45",
+          "type": "Charla",
+          "title": "Pleb Mining / NerdMiner",
+          "speaker": "Bitmaker",
+          "language": "ES",
+          "block": "Bitcoin II",
+          "sponsored": true
+        },
+        {
+          "time": "12:45-13:10",
+          "type": "Charla",
+          "title": "Bitvault",
+          "speaker": "Riccardo Biffi",
+          "language": "ES/EN",
+          "block": "Bitcoin II"
+        },
+        {
+          "time": "13:10-13:50",
+          "type": "Panel",
+          "title": "Bitcoin Economy — Dr Khusboo, Kilian, Alberto Mera. Mod: Efrat Fenigson",
+          "language": "ES/EN",
+          "block": "Bitcoin II"
+        },
+        {
+          "time": "13:50-14:30",
+          "type": "Comida",
+          "title": "Comida"
+        },
+        {
+          "time": "14:30-14:55",
+          "type": "Charla",
+          "title": "Chatcontrol",
+          "speaker": "Buttercup Roberts",
+          "language": "ES/EN",
+          "block": "Privacidad",
+          "parallel_ws": {
+            "title": "Pleb Mining hands-on",
+            "speaker": "Bitmaker",
+            "language": "ES"
+          }
+        },
+        {
+          "time": "14:55-15:20",
+          "type": "Charla",
+          "title": "Privacidad en Bitcoin y opciones actuales",
+          "speaker": "Arkad",
+          "language": "ES",
+          "block": "Privacidad",
+          "parallel_ws": {
+            "title": "Wallet con scripts / Rewind Bitcoin",
+            "speaker": "Landabaso",
+            "language": "ES"
+          }
+        },
+        {
+          "time": "15:20-15:45",
+          "type": "Charla",
+          "title": "Seguridad y privacidad puesto de trabajo",
+          "speaker": "Chavo",
+          "language": "ES",
+          "block": "Privacidad",
+          "sponsored": true
+        },
+        {
+          "time": "15:45-16:10",
+          "type": "Charla",
+          "title": "BitBox: Hardware Wallet",
+          "speaker": "Pakovm",
+          "language": "ES/EN",
+          "block": "Privacidad",
+          "sponsored": true
+        },
+        {
+          "time": "16:10-16:35",
+          "type": "Descanso",
+          "title": "Descanso"
+        },
+        {
+          "time": "16:35-17:00",
+          "type": "Charla",
+          "title": "From Vibe Code to Sovereign Code",
+          "speaker": "El Gorila",
+          "language": "ES",
+          "block": "Estructuras Paralelas",
+          "parallel_ws": {
+            "title": "Puesto de Trabajo Bitcoiner",
+            "speaker": "Chavo",
+            "language": "ES/EN"
+          }
+        },
+        {
+          "time": "17:00-17:25",
+          "type": "Charla",
+          "title": "Evolución de Nostr + Grimoire",
+          "speaker": "Verbiricha",
+          "language": "ES/EN",
+          "block": "Estructuras Paralelas",
+          "parallel_ws": {
+            "title": "BitBox hands-on",
+            "speaker": "Pakovm",
+            "language": "ES/EN"
+          }
+        },
+        {
+          "time": "17:25-18:00",
+          "type": "Panel",
+          "title": "Parallel Structures & Nostr — El Gorila, Verbiricha, Oz, Counterweight. Mod: Jordi Satlantis",
+          "language": "ES/EN",
+          "block": "Estructuras Paralelas"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-30",
+      "label": "Sábado 30 de Mayo",
+      "sessions": [
+        {
+          "time": "09:00-09:20",
+          "type": "Keynote",
+          "title": "Economía Bitcoin, escenarios macro",
+          "speaker": "Alberto Mera",
+          "language": "ES"
+        },
+        {
+          "time": "09:20-09:45",
+          "type": "Charla",
+          "title": "Agorismo, Praxeología y acción humana",
+          "speaker": "Entropy",
+          "language": "ES",
+          "block": "Soberanía",
+          "parallel_ws": {
+            "title": "Passport Hardware Wallet",
+            "speaker": "Jacksper",
+            "language": "ES"
+          }
+        },
+        {
+          "time": "09:45-10:10",
+          "type": "Charla",
+          "title": "Soberanía en la educación + Lightning",
+          "speaker": "Karliatto",
+          "language": "ES",
+          "block": "Soberanía"
+        },
+        {
+          "time": "10:10-10:50",
+          "type": "Panel",
+          "title": "Soberanía & Libertad — Entropy, Efrat, Karliatto, Alfre. Mod: Buttercup Roberts",
+          "language": "ES/EN",
+          "block": "Soberanía"
+        },
+        {
+          "time": "10:50-11:15",
+          "type": "Descanso",
+          "title": "Descanso"
+        },
+        {
+          "time": "11:15-11:40",
+          "type": "Charla",
+          "title": "Start9: novedades y soberanía digital",
+          "speaker": "Cryptosquid",
+          "language": "ES",
+          "block": "Permacultura & Soberanía Alimentaria",
+          "parallel_ws": {
+            "title": "Desarrollo Nostr con OpenClaw",
+            "speaker": "El Gorila",
+            "language": "ES"
+          }
+        },
+        {
+          "time": "11:40-12:05",
+          "type": "Charla",
+          "title": "Converting Waste to Bitcoin",
+          "speaker": "Orange Bamboo",
+          "language": "ES",
+          "block": "Permacultura & Soberanía Alimentaria",
+          "parallel_ws": {
+            "title": "Desarrollo de clientes Nostr + Grimoire",
+            "speaker": "Verbiricha",
+            "language": "ES"
+          }
+        },
+        {
+          "time": "12:05-12:40",
+          "type": "Panel",
+          "title": "Ready to Prepare — Cryptosquid, Bebop, Stoa Otter. Mod: Entropy",
+          "language": "ES",
+          "block": "Permacultura & Soberanía Alimentaria",
+          "sponsored": true
+        },
+        {
+          "time": "12:40-13:00",
+          "type": "Descanso",
+          "title": "Descanso"
+        },
+        {
+          "time": "13:00-13:25",
+          "type": "Panel",
+          "title": "Orange Pill & Magic Pill — Tierra Fertil & Guerrilla: conversación Bitcoin y psilocibe",
+          "language": "ES",
+          "block": "Comunidades & Cierre"
+        },
+        {
+          "time": "13:25-13:50",
+          "type": "Charla",
+          "title": "El bitcoiner de la familia — adopción para normies",
+          "speaker": "Marce",
+          "language": "ES",
+          "block": "Comunidades & Cierre"
+        },
+        {
+          "time": "13:50-14:30",
+          "type": "Panel",
+          "title": "Comunidades Bitcoin — Jordi Satlantis, El Gorila, Marce. Mod: General Kenobi",
+          "language": "ES/EN",
+          "block": "Comunidades & Cierre"
+        },
+        {
+          "time": "14:30-14:50",
+          "type": "Cierre de la conferencia",
+          "title": "Cierre de la conferencia"
+        },
+        {
+          "time": "15:00-18:30",
+          "type": "CypherPunk Barbecue — parrilla al fuego, bebidas locales, música en vivo, networking",
+          "title": "Barbacoa & Fiesta",
+          "description": "CypherPunk Barbecue — parrilla al fuego, bebidas locales, música en vivo, networking"
+        }
+      ]
+    }
+  ]
+}
