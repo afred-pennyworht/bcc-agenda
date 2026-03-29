@@ -25,8 +25,8 @@
 
   function injectStyles() {
     const css = `
-      .bcc-agenda { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a1a; }
-      .bcc-agenda * { box-sizing: border-box; }
+      .bcc-agenda { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a1a; background: #fff; border-radius: 12px; padding: 24px; }
+      .bcc-agenda * { box-sizing: border-box; color: inherit; }
       .bcc-day-tabs { display: flex; gap: 4px; margin-bottom: 24px; }
       .bcc-day-tab { padding: 10px 20px; border: 2px solid #f7931a; background: transparent; color: #f7931a; font-weight: 600; font-size: 15px; cursor: pointer; border-radius: 6px; transition: all 0.2s; }
       .bcc-day-tab.active { background: #f7931a; color: #fff; }
