@@ -181,7 +181,7 @@ function parseScheduleSheet(rows) {
         speaker: speaker || null,
         language: idioma || null,
         block: currentBlock,
-        sponsored: (notas || "").includes("🤝"),
+        // sponsored info stays in the sheet only, not exported to widget data
       };
 
       // Parallel workshop info
@@ -232,7 +232,7 @@ function buildLocalizedAgenda(lang, fridaySessions, saturdaySessions) {
       if (s.speaker) out.speaker = s.speaker;
       if (s.language) out.language = s.language;
       if (s.block) out.block = localizeBlock(s.block);
-      if (s.sponsored) out.sponsored = true;
+      // sponsored not exported to widget
       if (s.parallel_ws) {
         out.parallel_ws = {
           title: s.parallel_ws.title,

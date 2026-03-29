@@ -78,17 +78,17 @@
           "title": "Break"
         },
         {
-          "time": "11:30 - 13:50 (140 min)",
+          "time": "11:30-11:55",
           "type": "Talk",
           "title": "Préstamos colateralizados / Firefish",
           "speaker": "Losku",
           "language": "ES",
           "block": "Bitcoin II",
-          "sponsored": true,
           "parallel_ws": {
-            "title": "WS Slot 2: 11:30-13:00",
+            "title": "Massive Virtual Mining",
             "speaker": "Marcellus",
-            "language": "ES |"
+            "language": "ES",
+            "time": "11:30-13:00"
           }
         },
         {
@@ -97,8 +97,7 @@
           "title": "Rewind Bitcoin: wallet con scripts",
           "speaker": "Landabaso",
           "language": "ES",
-          "block": "Bitcoin II",
-          "sponsored": true
+          "block": "Bitcoin II"
         },
         {
           "time": "12:20-12:45",
@@ -106,8 +105,7 @@
           "title": "Pleb Mining / NerdMiner",
           "speaker": "Bitmaker",
           "language": "ES",
-          "block": "Bitcoin II",
-          "sponsored": true
+          "block": "Bitcoin II"
         },
         {
           "time": "12:45-13:10",
@@ -161,8 +159,7 @@
           "title": "Seguridad y privacidad puesto de trabajo",
           "speaker": "Chavo",
           "language": "ES",
-          "block": "Privacy",
-          "sponsored": true
+          "block": "Privacy"
         },
         {
           "time": "15:45-16:10",
@@ -170,8 +167,7 @@
           "title": "BitBox: Hardware Wallet",
           "speaker": "Pakovm",
           "language": "ES/EN",
-          "block": "Privacy",
-          "sponsored": true
+          "block": "Privacy"
         },
         {
           "time": "16:10-16:35",
@@ -288,8 +284,7 @@
           "type": "Panel",
           "title": "Ready to Prepare — Cryptosquid, Bebop, Stoa Otter. Mod: Entropy",
           "language": "ES",
-          "block": "Permaculture & Food Sovereignty",
-          "sponsored": true
+          "block": "Permaculture & Food Sovereignty"
         },
         {
           "time": "12:40-13:00",
