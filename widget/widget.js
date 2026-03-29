@@ -160,6 +160,8 @@
       html += `<div class="bcc-session-speaker">${s.speaker}`;
       if (s.language) html += `<span class="bcc-session-lang">(${s.language})</span>`;
       html += `</div>`;
+    } else if (s.language) {
+      html += `<div class="bcc-session-speaker"><span class="bcc-session-lang">(${s.language})</span></div>`;
     }
 
     if (s.description) {
