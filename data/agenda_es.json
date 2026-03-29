@@ -119,7 +119,7 @@
           "time": "13:10-13:50",
           "type": "Panel",
           "title": "Bitcoin Economy — Dr Khusboo, Kilian, Alberto Mera. Mod: Efrat Fenigson",
-          "language": "ES/EN",
+          "language": "EN",
           "block": "Bitcoin II"
         },
         {
@@ -204,7 +204,7 @@
           "time": "17:25-18:00",
           "type": "Panel",
           "title": "Parallel Structures & Nostr — El Gorila, Verbiricha, Oz, Counterweight. Mod: Jordi Satlantis",
-          "language": "ES/EN",
+          "language": "ES",
           "block": "Estructuras Paralelas"
         }
       ]
@@ -245,7 +245,7 @@
           "time": "10:10-10:50",
           "type": "Panel",
           "title": "Soberanía & Libertad — Entropy, Efrat, Karliatto, Alfre. Mod: Buttercup Roberts",
-          "language": "ES/EN",
+          "language": "ES",
           "block": "Soberanía"
         },
         {
@@ -261,9 +261,10 @@
           "language": "ES",
           "block": "Permacultura & Soberanía Alimentaria",
           "parallel_ws": {
-            "title": "Desarrollo Nostr con OpenClaw",
+            "title": "Desarrollo Soberano con Agents",
             "speaker": "El Gorila",
-            "language": "ES"
+            "language": "ES",
+            "time": "11:15-12:40"
           }
         },
         {
@@ -274,9 +275,10 @@
           "language": "ES",
           "block": "Permacultura & Soberanía Alimentaria",
           "parallel_ws": {
-            "title": "Desarrollo de clientes Nostr + Grimoire",
+            "title": "Desarrollo de Clientes Nostr con Claude Code",
             "speaker": "Verbiricha",
-            "language": "ES"
+            "language": "ES",
+            "time": "11:15-12:40"
           }
         },
         {
@@ -310,7 +312,7 @@
           "time": "13:50-14:30",
           "type": "Panel",
           "title": "Comunidades Bitcoin — Jordi Satlantis, El Gorila, Marce. Mod: General Kenobi",
-          "language": "ES/EN",
+          "language": "ES",
           "block": "Comunidades & Cierre"
         },
         {
