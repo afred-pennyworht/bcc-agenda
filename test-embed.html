@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test — Widget embed en contexto Readdy.ai</title>
+  <!-- Simulate aggressive Readdy.ai global resets -->
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #ffffff;
+      background: #0a0a0a;
+    }
+    /* Readdy.ai typical global overrides */
+    div { color: inherit; }
+    span { color: inherit; }
+    button { font-family: inherit; font-size: inherit; }
+    a { color: #f7931a; text-decoration: none; }
+    img { max-width: 100%; height: auto; }
+    h1, h2, h3, h4 { font-family: 'Inter', sans-serif; color: #ffffff; }
+    p { color: #cccccc; }
+
+    /* Page layout simulating Readdy */
+    .readdy-page { max-width: 1200px; margin: 0 auto; }
+    .readdy-section { padding: 60px 20px; }
+    .readdy-section h2 {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .readdy-section .subtitle {
+      text-align: center;
+      color: #999;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    /* Hero section */
+    .hero {
+      background: linear-gradient(135deg, #1a0a00 0%, #2d1500 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 48px; color: #f7931a; margin-bottom: 8px; }
+    .hero p { font-size: 20px; color: #ccc; }
+
+    /* Agenda section — where widget goes */
+    .agenda-section {
+      background: #111;
+      padding: 60px 20px;
+    }
+
+    /* Speakers grid (context above/below widget) */
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .speaker-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+    .speaker-card .name { font-weight: 600; font-size: 14px; }
+    .speaker-card .role { font-size: 12px; color: #888; }
+  </style>
+</head>
+<body>
+  <div class="readdy-page">
+
+    <!-- Simulated hero -->
+    <div class="hero">
+      <h1>BARCELONA CYPHERS CONFERENCE</h1>
+      <p>29-30 Mayo 2026 — Soberanía, Privacidad, Bitcoin</p>
+    </div>
+
+    <!-- Simulated speakers section -->
+    <div class="readdy-section">
+      <h2>Speakers</h2>
+      <p class="subtitle">Learn from the builders</p>
+      <div class="speakers-grid">
+        <div class="speaker-card"><div class="name">Efrat Fenigson</div><div class="role">Keynote</div></div>
+        <div class="speaker-card"><div class="name">Marcellus</div><div class="role">Speaker</div></div>
+        <div class="speaker-card"><div class="name">Counterweight</div><div class="role">Speaker</div></div>
+        <div class="speaker-card"><div class="name">Verbiricha</div><div class="role">Speaker</div></div>
+      </div>
+    </div>
+
+    <!-- AGENDA WIDGET EMBED -->
+    <div class="agenda-section">
+      <h2 style="text-align:center; color:#f7931a; margin-bottom: 32px;">PROGRAMA</h2>
+      <div id="bcc-agenda" data-lang="es"></div>
+    </div>
+
+    <!-- Simulated footer section -->
+    <div class="readdy-section" style="background: #0a0a0a;">
+      <h2>Partners</h2>
+      <p class="subtitle">Nuestros colaboradores</p>
+    </div>
+
+  </div>
+
+  <!-- Embed the widget exactly as it would be on the real site -->
+  <script src="widget/widget.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BCC2026 — Project Summary</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; color: #1a1a2e; background: #fff; line-height: 1.6; }
+
+  .header {
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    color: white; padding: 50px 60px 40px; position: relative; overflow: hidden;
+  }
+  .header::after {
+    content: ''; position: absolute; top: -50%; right: -10%; width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(247,147,30,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .header h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+  .header .subtitle { font-size: 15px; color: rgba(255,255,255,0.7); margin-top: 6px; }
+  .header .date { font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 16px; }
+
+  .content { padding: 40px 60px; }
+  h2 { font-size: 18px; font-weight: 600; color: #302b63; margin: 30px 0 14px; padding-bottom: 6px; border-bottom: 2px solid #f7931e; display: inline-block; }
+  h2:first-child { margin-top: 0; }
+
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 16px 0 24px; }
+  .stat { background: #f8f7ff; border-radius: 10px; padding: 18px; text-align: center; border: 1px solid #e8e6f0; }
+  .stat .num { font-size: 28px; font-weight: 700; color: #f7931e; }
+  .stat .label { font-size: 12px; color: #666; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  table { width: 100%; border-collapse: collapse; margin: 10px 0 20px; font-size: 13px; }
+  th { background: #302b63; color: white; padding: 10px 14px; text-align: left; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 9px 14px; border-bottom: 1px solid #eee; }
+  tr:nth-child(even) td { background: #fafafa; }
+
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .badge-ok { background: #e6f9e6; color: #2d7d2d; }
+  .badge-wip { background: #fff3e0; color: #b36b00; }
+  .badge-pending { background: #fde; color: #a33; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+  .two-col h2 { grid-column: 1 / -1; }
+
+  p, li { font-size: 13.5px; color: #333; }
+  ul { padding-left: 20px; margin: 6px 0; }
+  li { margin: 4px 0; }
+
+  .footer { margin-top: 40px; padding: 20px 60px; background: #f8f7ff; font-size: 11px; color: #999; text-align: center; border-top: 1px solid #eee; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Barcelona Cyphers Conference 2026</h1>
+  <div class="subtitle">Agenda Widget + Nostr Campaign — Project Summary</div>
+  <div class="date">Generated: April 8, 2026 &nbsp;|&nbsp; Event: May 29-30, 2026 &nbsp;|&nbsp; Repo: afred-pennyworht/bcc-agenda</div>
+</div>
+
+<div class="content">
+
+  <h2>Key Metrics</h2>
+  <div class="stats">
+    <div class="stat"><div class="num">31</div><div class="label">Speakers</div></div>
+    <div class="stat"><div class="num">12/31</div><div class="label">Nostr Posts Published</div></div>
+    <div class="stat"><div class="num">3</div><div class="label">Languages (ES/EN/CA)</div></div>
+    <div class="stat"><div class="num">51</div><div class="label">Days to Event</div></div>
+  </div>
+
+  <h2>Components</h2>
+  <table>
+    <tr><th>Component</th><th>Technology</th><th>Status</th></tr>
+    <tr><td>Agenda Widget</td><td>Vanilla JS IIFE, zero deps</td><td><span class="badge badge-ok">Live</span></td></tr>
+    <tr><td>Data Pipeline</td><td>Node.js + gws CLI (Google Sheets)</td><td><span class="badge badge-ok">Live</span></td></tr>
+    <tr><td>GitHub Pages</td><td>Static hosting</td><td><span class="badge badge-ok">Live</span></td></tr>
+    <tr><td>Readdy.ai Embed</td><td>bcc8333.xyz (no-code builder)</td><td><span class="badge badge-ok">Live</span></td></tr>
+    <tr><td>Nostr Speaker Campaign</td><td>nak CLI + systemd timer</td><td><span class="badge badge-wip">19 posts left</span></td></tr>
+    <tr><td>Ticket Campaign</td><td>Typefully + Telegram Bot</td><td><span class="badge badge-pending">Pending setup</span></td></tr>
+  </table>
+
+  <h2>Architecture</h2>
+  <table>
+    <tr><th>Layer</th><th>Flow</th></tr>
+    <tr><td>Data source</td><td>Google Sheet (schedules for Fri 29 + Sat 30 May)</td></tr>
+    <tr><td>Generation</td><td><code>generate.js</code> &rarr; <code>data/agenda_{es,en,ca}.json</code></td></tr>
+    <tr><td>Widget</td><td>Self-contained IIFE, auto-detects lang from URL or <code>data-lang</code></td></tr>
+    <tr><td>Deploy</td><td>git push &rarr; GitHub Pages &rarr; embedded via <code>&lt;script&gt;</code> on Readdy.ai</td></tr>
+    <tr><td>Nostr</td><td>systemd timer &rarr; <code>publish_cron.sh</code> &rarr; <code>publish_post.sh</code> &rarr; 3 relays</td></tr>
+  </table>
+
+  <div class="two-col">
+    <div>
+      <h2>Nostr Campaign Progress</h2>
+      <table>
+        <tr><th>Phase</th><th>Posts</th><th>Format</th><th>Status</th></tr>
+        <tr><td>Manual (pre-campaign)</td><td>#3, #4</td><td>MP4</td><td><span class="badge badge-ok">Done</span></td></tr>
+        <tr><td>Batch 1</td><td>#1, #2, #5-#8</td><td>MP4</td><td><span class="badge badge-ok">Done</span></td></tr>
+        <tr><td>Batch 2 (GIF)</td><td>#9-#12</td><td>GIF</td><td><span class="badge badge-ok">Done</span></td></tr>
+        <tr><td>Automated</td><td>#13-#31</td><td>GIF</td><td><span class="badge badge-wip">In queue</span></td></tr>
+      </table>
+      <p style="margin-top:8px;">Cron: 3 posts/day at 10:00, 12:15, 14:30. ETA: ~April 15.</p>
+    </div>
+    <div>
+      <h2>Ticket Campaign Plan</h2>
+      <table>
+        <tr><th>Phase</th><th>Dates</th><th>Focus</th></tr>
+        <tr><td>Phase 1</td><td>Apr 7-13</td><td>Early Bird urgency</td></tr>
+        <tr><td>Phase 2</td><td>Apr 14-27</td><td>Content & value</td></tr>
+        <tr><td>Phase 3</td><td>Apr 28 - May 28</td><td>Final countdown</td></tr>
+      </table>
+      <p style="margin-top:8px;">Remaining: 9 Normie (99&euro;) + 5 Cypherpunk (249&euro;) Early Bird tickets.</p>
+      <p>Channels: X (@bcc8333), Nostr, Telegram. Budget: 0&euro;.</p>
+    </div>
+  </div>
+
+  <h2>Security Model</h2>
+  <ul>
+    <li>Secrets: GPG-encrypted at rest, decrypted to RAM-only tmpfs (<code>/run/user/1000/</code>)</li>
+    <li>nostr.build auth: NIP-96 with Nostr auth events (kind 27235)</li>
+    <li>No tokens or keys in codebase &mdash; injected via env vars at runtime</li>
+  </ul>
+
+  <h2>Access</h2>
+  <table>
+    <tr><th>Resource</th><th>URL / Location</th></tr>
+    <tr><td>Live site</td><td>https://bcc8333.xyz</td></tr>
+    <tr><td>Widget preview</td><td>https://afred-pennyworht.github.io/bcc-agenda/</td></tr>
+    <tr><td>GitHub repo</td><td>https://github.com/afred-pennyworht/bcc-agenda</td></tr>
+    <tr><td>Google Sheet</td><td>ID: 1K8u2cODCrJgyvD67fQZ8WD5WwZQcFnjtrKkEL_rd0_I</td></tr>
+    <tr><td>Nostr account</td><td>npub1cc83337sj8jhma69a2hw6phgz57r6n4qm520lsssytcyrtpsqwfqltyz96</td></tr>
+  </table>
+
+</div>
+
+<div class="footer">
+  BCC2026 Project Summary &mdash; Generated by Claude Code &mdash; April 8, 2026
+</div>
+
+</body>
+</html>

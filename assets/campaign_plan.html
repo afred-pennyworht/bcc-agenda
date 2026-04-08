@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BCC2026 — Plan de Campaña Venta de Entradas</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 11pt;
+    padding: 40px 50px;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 60px;
+  }
+  .cover h1 {
+    font-size: 32pt;
+    color: #f7931a;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+  }
+  .cover .subtitle {
+    font-size: 18pt;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  .cover .meta {
+    font-size: 11pt;
+    color: #666;
+    margin-top: 20px;
+  }
+  .cover .badge {
+    display: inline-block;
+    background: #f7931a;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 12pt;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  h2 {
+    font-size: 16pt;
+    color: #f7931a;
+    border-bottom: 2px solid #f7931a;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+  }
+  h3 {
+    font-size: 12pt;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  p, li { margin-bottom: 6px; }
+  ul, ol { padding-left: 20px; margin-bottom: 12px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 18px 0;
+    font-size: 10pt;
+  }
+  th {
+    background: #f7931a;
+    color: white;
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: 600;
+  }
+  td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  tr:nth-child(even) td { background: #fdf6ec; }
+  .highlight {
+    background: #fff3e0;
+    border-left: 4px solid #f7931a;
+    padding: 12px 16px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .highlight strong { color: #f7931a; }
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    margin: 14px 0;
+  }
+  .kpi-box {
+    background: #1a1a1a;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .kpi-box .number {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #f7931a;
+  }
+  .kpi-box .label {
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #aaa;
+    margin-top: 4px;
+  }
+  .channel-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 8pt;
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  .tag-x { background: #000; color: #fff; }
+  .tag-nostr { background: #8B5CF6; color: #fff; }
+  .tag-tg { background: #0088cc; color: #fff; }
+  .page-break { page-break-before: always; }
+  .footer {
+    margin-top: 40px;
+    padding-top: 12px;
+    border-top: 1px solid #ddd;
+    font-size: 9pt;
+    color: #999;
+    text-align: center;
+  }
+  .phase-header {
+    background: #1a1a1a;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+  .phase-header span { color: #f7931a; }
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<div class="cover">
+  <h1>BCC 2026</h1>
+  <div class="subtitle">Plan de Campa&ntilde;a<br>Venta de Entradas</div>
+  <p style="font-size:13pt; color:#666;">Barcelona Cyphers Conference</p>
+  <p style="color:#999; margin-top:8px;">29 &ndash; 30 de mayo de 2026 &middot; La Salle Campus Barcelona</p>
+  <div class="badge">DOCUMENTO INTERNO</div>
+  <div class="meta">
+    Preparado: 6 de abril de 2026<br>
+    Estado: Para revisi&oacute;n del equipo<br>
+    Objetivo: Vender 300 entradas en 53 d&iacute;as
+  </div>
+</div>
+
+<!-- PÁGINA 2: SITUACIÓN ACTUAL -->
+<h2>1. Situaci&oacute;n Actual</h2>
+
+<div class="kpi-grid">
+  <div class="kpi-box">
+    <div class="number">53</div>
+    <div class="label">D&iacute;as para el evento</div>
+  </div>
+  <div class="kpi-box">
+    <div class="number">300</div>
+    <div class="label">Aforo m&aacute;ximo</div>
+  </div>
+  <div class="kpi-box">
+    <div class="number">14</div>
+    <div class="label">Early Bird restantes</div>
+  </div>
+  <div class="kpi-box">
+    <div class="number">31</div>
+    <div class="label">Speakers confirmados</div>
+  </div>
+</div>
+
+<h3>Entradas disponibles</h3>
+<table>
+  <tr><th>Tipo</th><th>Precio</th><th>Incluye</th><th>Disponibles</th></tr>
+  <tr>
+    <td><strong>Early Bird Normie</strong></td>
+    <td>99 &euro;</td>
+    <td>2 d&iacute;as + caf&eacute; y snacks en breaks</td>
+    <td>9 de 50</td>
+  </tr>
+  <tr>
+    <td><strong>Early Bird Cypherpunk</strong></td>
+    <td>249 &euro;</td>
+    <td>2 d&iacute;as + caf&eacute; + almuerzo viernes + BBQ s&aacute;bado</td>
+    <td>5 de 50</td>
+  </tr>
+</table>
+
+<h3>Canales de comunicaci&oacute;n</h3>
+<table>
+  <tr><th>Canal</th><th>Handle / ID</th><th>Estado</th></tr>
+  <tr><td><span class="channel-tag tag-x">X</span> Twitter/X</td><td>@bcc8333</td><td>Activo &mdash; 31 speaker announcements publicados</td></tr>
+  <tr><td><span class="channel-tag tag-nostr">NOSTR</span> Nostr</td><td>npub1cc8333...</td><td>Reactiv&aacute;ndose &mdash; 7 posts publicados, 24 programados</td></tr>
+  <tr><td><span class="channel-tag tag-tg">TG</span> Telegram</td><td>Grupo BCC + grupos meetups</td><td>Disponible para campa&ntilde;a</td></tr>
+</table>
+
+<h3>M&eacute;todos de pago</h3>
+<ul>
+  <li><strong>Bitcoin / Lightning</strong> &mdash; via BTCPay Server (btcpayserver.bcc8333.xyz)</li>
+  <li><strong>Tarjeta de cr&eacute;dito/d&eacute;bito</strong> &mdash; via Ticket Tailor (tickets.bcc8333.xyz)</li>
+</ul>
+
+<h3>Activos disponibles</h3>
+<ul>
+  <li>31 videos promocionales de speakers (MP4, ya en nostr.build CDN)</li>
+  <li>Agenda completa en 3 idiomas (ES/EN/CA)</li>
+  <li>Widget de agenda embebible</li>
+  <li>10+ workshops hands-on confirmados</li>
+  <li>4 sponsors + 4 media partners</li>
+</ul>
+
+<!-- PÁGINA 3: ESTRATEGIA -->
+<div class="page-break"></div>
+<h2>2. Estrategia General</h2>
+
+<div class="highlight">
+  <strong>Tesis:</strong> Las entradas se venden con <em>urgencia</em> (escasez real), <em>valor percibido</em> (workshops &uacute;nicos + BBQ) y <em>prueba social</em> (speakers + comunidad). Publicamos en los 3 canales (X, Nostr, Telegram) de forma coordinada, adaptando el formato a cada uno.
+</div>
+
+<h3>Diferenciadores clave para el messaging</h3>
+<ol>
+  <li><strong>Aforo limitado a 300</strong> &mdash; Escasez real, no artificial</li>
+  <li><strong>10 workshops hands-on</strong> &mdash; Fedimint, pleb mining, hardware wallets, Nostr dev... No se encuentran en YouTube</li>
+  <li><strong>BBQ Cypherpunk</strong> &mdash; Cerveza ilimitada, fuego, m&uacute;sica, networking. Incluido en la entrada Cypherpunk</li>
+  <li><strong>31 speakers internacionales</strong> &mdash; Builders reales, no influencers</li>
+  <li><strong>Barcelona</strong> &mdash; Capital hist&oacute;rica del anarquismo + 10+ a&ntilde;os de escena Bitcoin</li>
+  <li><strong>Paga con Bitcoin</strong> &mdash; BTCPay Server nativo</li>
+</ol>
+
+<h3>Adaptaci&oacute;n por canal</h3>
+<table>
+  <tr><th>Canal</th><th>Formato</th><th>Tono</th><th>Frecuencia</th></tr>
+  <tr>
+    <td><span class="channel-tag tag-x">X</span></td>
+    <td>Tweets, threads, im&aacute;genes, video clips</td>
+    <td>P&uacute;blico, aspiracional, FOMO</td>
+    <td>1-2 posts/d&iacute;a</td>
+  </tr>
+  <tr>
+    <td><span class="channel-tag tag-nostr">NOSTR</span></td>
+    <td>Kind 1 notes, long-form (habla.news), NIP-52 events</td>
+    <td>Cypherpunk, t&eacute;cnico, comunidad</td>
+    <td>1 post/d&iacute;a + speakers programados</td>
+  </tr>
+  <tr>
+    <td><span class="channel-tag tag-tg">TG</span></td>
+    <td>Mensajes con preview, encuestas, behind-the-scenes</td>
+    <td>Cercano, exclusivo, comunitario</td>
+    <td>3-4 posts/semana + meetup groups</td>
+  </tr>
+</table>
+
+<!-- PÁGINA 4: FASES -->
+<div class="page-break"></div>
+<h2>3. Fases de la Campa&ntilde;a</h2>
+
+<!-- FASE 1 -->
+<div class="phase-header">
+  <span>FASE 1</span> &mdash; URGENCIA EARLY BIRD &nbsp; (7 &ndash; 13 abril)
+</div>
+
+<p><strong>Objetivo:</strong> Agotar las 14 entradas Early Bird restantes.</p>
+<p><strong>T&aacute;ctica:</strong> Reducir artificialmente el contador a inicio de semana y comunicar deadline de fin de semana.</p>
+
+<table>
+  <tr><th>D&iacute;a</th><th>Contenido</th><th>Canales</th></tr>
+  <tr>
+    <td>Lun 7</td>
+    <td><strong>&ldquo;&Uacute;ltimas 14 Early Bird&rdquo;</strong> &mdash; Contador visual. &ldquo;Cuando se acaben, sube el precio.&rdquo;</td>
+    <td><span class="channel-tag tag-x">X</span><span class="channel-tag tag-nostr">NOSTR</span><span class="channel-tag tag-tg">TG</span></td>
+  </tr>
+  <tr>
+    <td>Mar 8</td>
+    <td><strong>&ldquo;&iquest;Qu&eacute; incluye tu entrada Cypherpunk?&rdquo;</strong> &mdash; Desglose: workshops + almuerzo + BBQ con cerveza ilimitada. &ldquo;Por menos que una cena en Barcelona.&rdquo;</td>
+    <td><span class="channel-tag tag-x">X</span><span class="channel-tag tag-nostr">NOSTR</span><span class="channel-tag tag-tg">TG</span></td>
+  </tr>
+  <tr>
+    <td>Mi&eacute; 9</td>
+    <td><strong>&ldquo;10 workshops que no encuentras en YouTube&rdquo;</strong> &mdash; Lista: Fedimint, pleb mining, hardware wallets, Nostr dev con Claude Code, wallet scripting...</td>
+    <td><span class="channel-tag tag-x">X</span><span class="channel-tag tag-nostr">NOSTR</span></td>
+  </tr>
+  <tr>
+    <td>Jue 10</td>
+    <td><strong>&ldquo;300 es el aforo. No hay m&aacute;s.&rdquo;</strong> &mdash; Post minimalista. Escasez real.</td>
+    <td><span class="channel-tag tag-x">X</span><span class="channel-tag tag-nostr">NOSTR</span><span class="channel-tag tag-tg">TG</span></td>
+  </tr>
+  <tr>
+    <td>Vie 11</td>
+    <td><strong>Speaker quote/clip</strong> &mdash; Un speaker (Efrat, Verbiricha o similar) dice en 15s por qu&eacute; viene. Pedir colaboraci&oacute;n directa.</td>
+    <td><span class="channel-tag tag-x">X</span><span class="channel-tag tag-nostr">NOSTR</span></td>
+  </tr>
+  <tr>
+    <td>S&aacute;b 12</td>
+    <td><strong>&ldquo;Last call Early Bird&rdquo;</strong> &mdash; Countdown final. &ldquo;Ma&ntilde;ana se cierra.&rdquo;</td>
+    <td><span class="channel-tag tag-x">X</span><span class="channel-tag tag-nostr">NOSTR</span><span class="channel-tag tag-tg">TG</span></td>
+  </tr>
+  <tr>
+    <td>Dom 13</td>
+    <td><strong>&ldquo;Early Bird agotadas / &Uacute;ltimas horas&rdquo;</strong> &mdash; Cierre o transici&oacute;n a precio regular.</td>
+    <td><span class="channel-tag tag-x">X</span><span class="channel-tag tag-nostr">NOSTR</span><span class="channel-tag tag-tg">TG</span></td>
+  </tr>
+</table>
+
+<div class="highlight">
+  <strong>Acci&oacute;n requerida:</strong> Decidir fecha l&iacute;mite artificial para Early Bird (sugerido: domingo 13 de abril) y preparar el cambio de precio en BTCPay/Ticket Tailor.
+</div>
+
+<!-- FASE 2 -->
+<div class="phase-header">
+  <span>FASE 2</span> &mdash; CONTENIDO DE VALOR &nbsp; (14 &ndash; 27 abril)
+</div>
+
+<p><strong>Objetivo:</strong> Convertir curiosos en compradores mostrando el valor real de la conferencia.</p>
+
+<h3>Serie A: &ldquo;&iquest;Por qu&eacute; vienes a la BCC?&rdquo; (speakers en 30s)</h3>
+<ul>
+  <li>Pedir a 5-6 speakers que graben un clip corto con su motivaci&oacute;n</li>
+  <li>Publicar 1 cada 2-3 d&iacute;as en los 3 canales, taggeando al speaker</li>
+  <li>Amplificaci&oacute;n org&aacute;nica cuando el speaker repostea</li>
+</ul>
+
+<h3>Serie B: &ldquo;Workshop Spotlight&rdquo;</h3>
+<ul>
+  <li>1 post por workshop: qu&eacute; aprendes, qui&eacute;n lo da, por qu&eacute; importa</li>
+  <li>&ldquo;Sales de aqu&iacute; sabiendo montar tu nodo / minar / usar Fedimint&rdquo;</li>
+  <li>Ideal para Telegram (formato largo con previews)</li>
+</ul>
+
+<h3>Serie C: &ldquo;Barcelona + Bitcoin&rdquo;</h3>
+<ul>
+  <li>Barcelona como capital del anarquismo hist&oacute;rico + escena Bitcoin de 10+ a&ntilde;os</li>
+  <li>Fotos del venue (La Salle Campus), la zona, qu&eacute; hacer antes/despu&eacute;s</li>
+  <li>&ldquo;Ven por la BCC, qu&eacute;date por Barcelona&rdquo;</li>
+</ul>
+
+<h3>Serie D: Thread de valor</h3>
+<ul>
+  <li>Thread largo en X: &ldquo;10 cosas que vas a aprender en la BCC2026 que no puedes aprender online&rdquo;</li>
+  <li>Repost en Nostr como long-form (habla.news)</li>
+  <li>Compartir en grupos de Telegram de meetups</li>
+</ul>
+
+<table>
+  <tr><th>Semana</th><th>Contenido</th><th>Posts</th></tr>
+  <tr>
+    <td>14-20 Abr</td>
+    <td>2x Speaker clips + 2x Workshop spotlight</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>21-27 Abr</td>
+    <td>2x Barcelona + Bitcoin + 1x Thread de valor + 1x Speaker clip</td>
+    <td>4</td>
+  </tr>
+</table>
+
+<!-- PÁGINA 5: FASES 3 -->
+<div class="page-break"></div>
+
+<!-- FASE 3 -->
+<div class="phase-header">
+  <span>FASE 3</span> &mdash; COUNTDOWN FINAL &nbsp; (28 abril &ndash; 28 mayo)
+</div>
+
+<p><strong>Objetivo:</strong> Llenar las plazas restantes con m&aacute;xima presi&oacute;n en el &uacute;ltimo mes.</p>
+
+<h3>Semana 1: &ldquo;30 d&iacute;as&rdquo; (28 Abr &ndash; 4 May)</h3>
+<ul>
+  <li>Post diario de countdown con dato/speaker/workshop diferente</li>
+  <li>Activar speakers para que reposteen y compartan</li>
+  <li>Encuesta en Telegram: &ldquo;&iquest;Qu&eacute; workshop te interesa m&aacute;s?&rdquo;</li>
+</ul>
+
+<h3>Semana 2: &ldquo;Comunidad&rdquo; (5 &ndash; 11 May)</h3>
+<ul>
+  <li>&ldquo;&iquest;Qui&eacute;n viene?&rdquo; &mdash; Post pidiendo que la gente se etiquete</li>
+  <li>Prueba social: la gente compra cuando ve que otros van</li>
+  <li>Compartir en grupos de meetups de Bitcoin (Madrid, Valencia, M&aacute;laga, Bilbao...)</li>
+</ul>
+
+<h3>Semana 3: &ldquo;&Uacute;ltimas plazas&rdquo; (12 &ndash; 18 May)</h3>
+<ul>
+  <li>Push final agresivo: &ldquo;&Uacute;ltima oportunidad&rdquo;</li>
+  <li>Posible incentivo: descuento grupal (3 entradas = X% off)</li>
+  <li>Publicar n&uacute;meros: &ldquo;Ya somos X. Faltan Y plazas.&rdquo;</li>
+</ul>
+
+<h3>Semana 4: &ldquo;Nos vemos all&iacute;&rdquo; (19 &ndash; 28 May)</h3>
+<ul>
+  <li>Info pr&aacute;ctica: c&oacute;mo llegar, qu&eacute; llevar, horarios</li>
+  <li>Hype del BBQ: &ldquo;&iquest;Est&aacute;s listo para la barbacoa cypherpunk?&rdquo;</li>
+  <li>&Uacute;ltimo push para indecisos con behind-the-scenes</li>
+</ul>
+
+<table>
+  <tr><th>Semana</th><th>Fase</th><th>Posts/semana</th><th>Foco</th></tr>
+  <tr><td>7 &ndash; 13 Abr</td><td>Urgencia Early Bird</td><td>7</td><td>Agotar Early Bird</td></tr>
+  <tr><td>14 &ndash; 20 Abr</td><td>Contenido de valor</td><td>4</td><td>Workshops + speakers</td></tr>
+  <tr><td>21 &ndash; 27 Abr</td><td>Contenido de valor</td><td>4</td><td>Barcelona + threads</td></tr>
+  <tr><td>28 Abr &ndash; 4 May</td><td>Countdown 30d</td><td>7</td><td>Countdown diario</td></tr>
+  <tr><td>5 &ndash; 11 May</td><td>Comunidad</td><td>4</td><td>Prueba social</td></tr>
+  <tr><td>12 &ndash; 18 May</td><td>&Uacute;ltimas plazas</td><td>5</td><td>Push final</td></tr>
+  <tr><td>19 &ndash; 28 May</td><td>Pre-evento</td><td>5</td><td>Info pr&aacute;ctica + hype</td></tr>
+</table>
+
+<!-- PÁGINA 6: TÁCTICAS TRANSVERSALES -->
+<div class="page-break"></div>
+<h2>4. T&aacute;cticas Transversales</h2>
+
+<h3>4.1 Amplificaci&oacute;n v&iacute;a speakers</h3>
+<ul>
+  <li>Crear un pack de assets para cada speaker: imagen + texto pre-escrito + enlace de tickets</li>
+  <li>Pedirles que publiquen 2-3 veces antes del evento</li>
+  <li>31 speakers &times; 2-3 posts = <strong>60-90 posts org&aacute;nicos</strong> de amplificaci&oacute;n</li>
+  <li>Proveer textos en ES e EN para maximizar alcance</li>
+</ul>
+
+<h3>4.2 Referral y grupos</h3>
+<ul>
+  <li>&ldquo;Trae a un amigo&rdquo; &mdash; Descuento o beneficio por referral (si BTCPay lo permite)</li>
+  <li>Descuentos para comunidades locales: BCN BTC Hub, Bitcoin Tuesday Madrid, meetups regionales</li>
+  <li>C&oacute;digos promocionales espec&iacute;ficos por comunidad para medir conversi&oacute;n</li>
+</ul>
+
+<h3>4.3 Nostr-native plays</h3>
+<ul>
+  <li><strong>Zap Goals (NIP-75):</strong> Crear un goal &ldquo;Llenar la BCC&rdquo; donde la gente pueda zapear y compartir</li>
+  <li><strong>Evento calendario (NIP-52):</strong> Publicar la BCC como evento en Nostr &mdash; aparece en clientes que soportan calendarios</li>
+  <li><strong>Long-form (habla.news):</strong> Art&iacute;culo detallado sobre la conferencia con agenda completa</li>
+  <li><strong>Mentions de speakers:</strong> Cada post taggea la npub del speaker &rarr; notificaci&oacute;n directa + visibilidad en su red</li>
+</ul>
+
+<h3>4.4 Telegram</h3>
+<ul>
+  <li>Contenido exclusivo en el grupo BCC: behind-the-scenes, preview del men&uacute; del BBQ, fotos del venue</li>
+  <li>Encuestas interactivas: &ldquo;&iquest;Qu&eacute; workshop te interesa m&aacute;s?&rdquo;, &ldquo;&iquest;Vienes solo o en grupo?&rdquo;</li>
+  <li>Cross-posting a grupos de meetups (Madrid, Barcelona, Valencia, etc.)</li>
+  <li>Mensajes directos a admins de grupos para coordinar promoci&oacute;n</li>
+</ul>
+
+<h3>4.5 Cross-promo con media partners</h3>
+<table>
+  <tr><th>Partner</th><th>Acci&oacute;n</th></tr>
+  <tr><td>Bitcoin Only Events</td><td>Listing destacado + posts cruzados</td></tr>
+  <tr><td>BCN Bitcoin Only</td><td>Promoci&oacute;n local Barcelona</td></tr>
+  <tr><td>BCN BTC Hub</td><td>Evento en su comunidad + c&oacute;digo descuento</td></tr>
+  <tr><td>Bitcorner</td><td>Menci&oacute;n en contenido + redes</td></tr>
+  <tr><td>Alberto Mera</td><td>Menci&oacute;n en &ldquo;Un podcast sobre Bitcoin&rdquo; (speaker + media)</td></tr>
+</table>
+
+<!-- PÁGINA 7: AUTOMATIZACIÓN + MÉTRICAS -->
+<div class="page-break"></div>
+<h2>5. Automatizaci&oacute;n</h2>
+
+<p>El objetivo es automatizar la publicaci&oacute;n en los 3 canales desde un &uacute;nico sistema.</p>
+
+<h3>Estado actual de automatizaci&oacute;n</h3>
+<table>
+  <tr><th>Canal</th><th>Estado</th><th>Acci&oacute;n necesaria</th></tr>
+  <tr>
+    <td><span class="channel-tag tag-nostr">NOSTR</span></td>
+    <td style="color:green;">&#10003; Automatizado</td>
+    <td>Speaker announcements program&aacute;ndose via cron (3/d&iacute;a). Posts de campa&ntilde;a manuales via nak.</td>
+  </tr>
+  <tr>
+    <td><span class="channel-tag tag-x">X</span></td>
+    <td style="color:orange;">&#9888; Pendiente setup</td>
+    <td>Conectar @bcc8333 a <strong>Typefully</strong> (gratis) y generar API key. Alternativa: Buffer (6&euro;/mes).</td>
+  </tr>
+  <tr>
+    <td><span class="channel-tag tag-tg">TG</span></td>
+    <td style="color:orange;">&#9888; Pendiente setup</td>
+    <td>Crear bot via @BotFather, a&ntilde;adirlo como admin al grupo, compartir token.</td>
+  </tr>
+</table>
+
+<h3>Setup requerido (10 minutos)</h3>
+<ol>
+  <li><strong>Typefully (X):</strong> Ir a typefully.com &rarr; conectar @bcc8333 &rarr; Settings &gt; API &rarr; generar API key</li>
+  <li><strong>Telegram Bot:</strong> Hablar con @BotFather &rarr; /newbot &rarr; nombre &ldquo;BCC2026 Bot&rdquo; &rarr; copiar token &rarr; a&ntilde;adir bot como admin al grupo</li>
+  <li><strong>Entregar credenciales:</strong> Cifrar ambos tokens con GPG y a&ntilde;adir al sistema de secretos del proyecto</li>
+</ol>
+
+<h2>6. M&eacute;tricas</h2>
+
+<table>
+  <tr><th>M&eacute;trica</th><th>Fuente</th><th>Meta</th></tr>
+  <tr><td>Entradas vendidas</td><td>BTCPay + Ticket Tailor</td><td>300 (sold out)</td></tr>
+  <tr><td>Early Bird agotadas</td><td>BTCPay + Ticket Tailor</td><td>100% antes del 13 Abr</td></tr>
+  <tr><td>Impresiones X</td><td>X Analytics</td><td>+50% vs. mes anterior</td></tr>
+  <tr><td>Engagement Nostr</td><td>Zaps + reposts + replies</td><td>Crecimiento sostenido</td></tr>
+  <tr><td>Miembros Telegram</td><td>Bot API</td><td>+30% en 7 semanas</td></tr>
+  <tr><td>Clicks en tickets</td><td>Analytics web</td><td>Tracking por UTM si es posible</td></tr>
+  <tr><td>Reposts de speakers</td><td>Manual / monitoreo</td><td>20+ speakers compartiendo</td></tr>
+</table>
+
+<h2>7. Presupuesto</h2>
+
+<table>
+  <tr><th>Concepto</th><th>Coste</th><th>Notas</th></tr>
+  <tr><td>Typefully (X API)</td><td>0 &euro;</td><td>Plan gratuito</td></tr>
+  <tr><td>Telegram Bot</td><td>0 &euro;</td><td>API gratuita</td></tr>
+  <tr><td>Nostr (nak + relays)</td><td>0 &euro;</td><td>Infraestructura propia</td></tr>
+  <tr><td>nostr.build (media hosting)</td><td>0 &euro;</td><td>Cuenta premium existente</td></tr>
+  <tr><td>Buffer (alternativa X)</td><td>6 &euro;/mes</td><td>Solo si Typefully no funciona</td></tr>
+  <tr><td><strong>TOTAL</strong></td><td><strong>0 &euro;</strong></td><td>Todo con herramientas gratuitas</td></tr>
+</table>
+
+<div class="footer">
+  BCC 2026 &mdash; Barcelona Cyphers Conference &middot; Plan de Campa&ntilde;a Venta de Entradas &middot; Documento interno &middot; Abril 2026
+</div>
+
+</body>
+</html>

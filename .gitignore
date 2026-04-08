@@ -1,0 +1,5 @@
+assets/speakers/*.mp4
+assets/speakers/gif/*.gif
+scripts/publish.log
+test-results/
+.claude/secrets.json
