@@ -186,10 +186,15 @@ function parseScheduleSheet(rows) {
 
       // Parallel workshop info
       if (salaB && !salaB.startsWith("[") && salaB !== "—" && salaB !== "") {
+        const cleanedLang = (notas || "")
+          .replace("🤝", "")
+          .replace(/\|/g, "")
+          .replace(/\s+/g, " ")
+          .trim();
         session.parallel_ws = {
           title: salaB.replace(/^WS-\d+[a-z]: /, ""),
           speaker: speakerWs || null,
-          language: notas && !notas.includes("🤝") ? notas : (notas || "").replace("🤝", "").trim() || null,
+          language: cleanedLang || null,
         };
       }
 
@@ -277,7 +282,7 @@ console.log(`  ${saturdaySessions.length} sessions parsed`);
 for (const lang of ["es", "en", "ca"]) {
   const agenda = buildLocalizedAgenda(lang, fridaySessions, saturdaySessions);
   const outPath = path.join(DATA_DIR, `agenda_${lang}.json`);
-  fs.writeFileSync(outPath, JSON.stringify(agenda, null, 2), "utf8");
+  fs.writeFileSync(outPath, JSON.stringify(agenda, null, 2) + "\n", "utf8");
   console.log(`Written: ${outPath}`);
 }
 
