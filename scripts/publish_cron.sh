@@ -8,14 +8,6 @@ SCRIPTS_DIR="$(cd "$(dirname "$0")" && pwd)"
 QUEUE_FILE="$SCRIPTS_DIR/queue.txt"
 LOG_FILE="$SCRIPTS_DIR/publish.log"
 
-# Read NSEC from RAM-only file (created by user session, not persisted to disk)
-NSEC_FILE="/run/user/1000/bcc_nsec"
-if [ ! -f "$NSEC_FILE" ]; then
-  echo "$(date -Iseconds) ERROR: $NSEC_FILE not found (run: /work/secrets/secrets get hot/bcc_nostr_nsec > $NSEC_FILE && chmod 600 $NSEC_FILE)" >> "$LOG_FILE"
-  exit 1
-fi
-export BCC_NOSTR_NSEC=$(cat "$NSEC_FILE")
-
 if [ ! -f "$QUEUE_FILE" ] || [ ! -s "$QUEUE_FILE" ]; then
   echo "$(date -Iseconds) Queue empty. Cron can be removed." >> "$LOG_FILE"
   exit 0
