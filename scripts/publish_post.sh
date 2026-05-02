@@ -8,8 +8,14 @@ SCRIPTS_DIR="$(cd "$(dirname "$0")" && pwd)"
 POSTS_FILE="$SCRIPTS_DIR/posts.json"
 QUEUE_FILE="$SCRIPTS_DIR/queue.txt"
 LOG_FILE="$SCRIPTS_DIR/publish.log"
-SECRET_VAR="BCC_NOSTR_NSEC"
-NSEC="${!SECRET_VAR}"
+
+# Lazy-fetch nsec from secrets v2 (ADR-005: no secrets via argv).
+# Passed to nak via $NOSTR_SECRET_KEY env, not --sec flag.
+NSEC=$(/work/secrets/secrets get hot/bcc_nostr_nsec)
+if [ -z "$NSEC" ]; then
+  echo "ERROR: NSEC not available (is secrets unlocked?)" | tee -a "$LOG_FILE"
+  exit 1
+fi
 
 RELAYS=(
   "wss://relay.damus.io"
@@ -18,11 +24,6 @@ RELAYS=(
   "wss://relay.primal.net"
   "wss://relay.snort.social"
 )
-
-if [ -z "$NSEC" ]; then
-  echo "ERROR: NSEC not available" | tee -a "$LOG_FILE"
-  exit 1
-fi
 
 # Get post number: from argument or next from queue
 if [ -n "${1:-}" ]; then
@@ -79,8 +80,8 @@ done
 
 # Publish kind 1 event with nak
 # -c @file reads content from file
-RESULT=$(nak event \
-  --sec "$NSEC" \
+# nsec via $NOSTR_SECRET_KEY env (no argv leak)
+RESULT=$(NOSTR_SECRET_KEY="$NSEC" nak event \
   -k 1 \
   -c "@$TMPFILE" \
   -t r="$VIDEO_URL" \

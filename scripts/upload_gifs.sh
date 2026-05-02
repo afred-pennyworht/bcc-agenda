@@ -4,10 +4,12 @@ set -euo pipefail
 UPLOAD_URL="https://nostr.build/api/v2/nip96/upload"
 GIF_DIR="/work/bcc2026/assets/speakers/gif"
 OUTPUT_FILE="/work/bcc2026/assets/speakers/gif_upload_urls.txt"
-NSEC="$BCC_NOSTR_NSEC"
 
+# Lazy-fetch nsec from secrets v2 (ADR-005: no secrets via argv).
+# Passed to nak via $NOSTR_SECRET_KEY env, not --sec flag.
+NSEC=$(/work/secrets/secrets get hot/bcc_nostr_nsec)
 if [ -z "$NSEC" ]; then
-  echo "ERROR: secret not available"
+  echo "ERROR: secret not available (is secrets unlocked?)"
   exit 1
 fi
 
@@ -17,8 +19,7 @@ for file in "$GIF_DIR"/*.gif; do
   filename=$(basename "$file")
   echo "Uploading: $filename"
 
-  AUTH_EVENT=$(nak event \
-    --sec "$NSEC" \
+  AUTH_EVENT=$(NOSTR_SECRET_KEY="$NSEC" nak event \
     -k 27235 \
     -t u="$UPLOAD_URL" \
     -t method="POST" \

@@ -2,8 +2,8 @@
 set -euo pipefail
 
 UPLOAD_URL="https://nostr.build/api/v2/nip96/upload"
-VIDEO_DIR="assets/speakers"
-OUTPUT_FILE="assets/speakers/upload_urls.txt"
+GIF_DIR="/work/bcc2026/assets/sponsors/gif"
+OUTPUT_FILE="/work/bcc2026/assets/sponsors/gif_upload_urls.txt"
 
 # Lazy-fetch nsec from secrets v2 (ADR-005: no secrets via argv).
 # Passed to nak via $NOSTR_SECRET_KEY env, not --sec flag.
@@ -13,25 +13,28 @@ if [ -z "$NSEC" ]; then
   exit 1
 fi
 
-# Keep existing first entry if file exists
 : > "$OUTPUT_FILE"
 
-for file in "$VIDEO_DIR"/*.mp4; do
+for file in "$GIF_DIR"/*.gif; do
   filename=$(basename "$file")
+  # skip backup variants
+  case "$filename" in
+    *_old.gif) echo "skip backup $filename"; continue ;;
+  esac
   echo "Uploading: $filename"
 
   AUTH_EVENT=$(NOSTR_SECRET_KEY="$NSEC" nak event \
     -k 27235 \
     -t u="$UPLOAD_URL" \
     -t method="POST" \
-    -c "" 2>/dev/null)
+    -c "" </dev/null 2>/dev/null)
 
   AUTH_BASE64=$(echo "$AUTH_EVENT" | base64 -w 0)
 
   RESPONSE=$(curl -s -X POST "$UPLOAD_URL" \
     -H "Authorization: Nostr $AUTH_BASE64" \
     -F "file=@$file" \
-    -F "content_type=video/mp4" \
+    -F "content_type=image/gif" \
     -F "no_transform=true")
 
   URL=$(echo "$RESPONSE" | python3 -c "
@@ -48,7 +51,7 @@ for t in tags:
     echo "  -> $URL"
     echo "$filename $URL" >> "$OUTPUT_FILE"
   else
-    echo "  -> ERROR"
+    echo "  -> ERROR: $RESPONSE"
     echo "$filename ERROR" >> "$OUTPUT_FILE"
   fi
 
