@@ -41,7 +41,7 @@
         {
           "time": "09:50-10:15",
           "type": "Charla",
-          "title": "GALT GULCH digital",
+          "title": "El Galt's Gulch ya está aquí",
           "speaker": "Counterweight",
           "language": "ES",
           "block": "Bitcoin I",
@@ -118,14 +118,14 @@
           "time": "13:00-13:15",
           "type": "Charla",
           "title": "Custodia Colaborativa con Citadel B",
-          "speaker": "Antonio Bonilla + Marcellus",
+          "speaker": "Antonio B + Marcellus",
           "language": "ES",
           "block": "Bitcoin II"
         },
         {
           "time": "13:15-13:50",
           "type": "Panel",
-          "title": "Bitcoin Economy — Dr Khusboo, Kilian, Alberto Mera. Mod: Efrat Fenigson",
+          "title": "Bitcoin Economy — Dr Khushboo, Kilian, Alberto Mera. Mod: Efrat Fenigson",
           "language": "EN",
           "block": "Bitcoin II"
         },
@@ -235,8 +235,8 @@
           "language": "ES",
           "block": "Soberanía",
           "parallel_ws": {
-            "title": "Passport Hardware Wallet",
-            "speaker": "Jacksper",
+            "title": "Start9 hands-on y novedades",
+            "speaker": "Cryptosquid",
             "language": "ES"
           }
         },
@@ -276,8 +276,8 @@
         {
           "time": "11:15-11:40",
           "type": "Charla",
-          "title": "Start9: novedades y soberanía digital",
-          "speaker": "Cryptosquid",
+          "title": "Sobres Gordianos: un salto en la implementación de Bluetooth",
+          "speaker": "Jacksper",
           "language": "ES",
           "block": "Permacultura & Soberanía Alimentaria",
           "parallel_ws": {
