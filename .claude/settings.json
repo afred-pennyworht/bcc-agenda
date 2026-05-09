@@ -1,5 +1,12 @@
 {
   "enabledPlugins": {
     "bifrost@bifrost-local": true
+  },
+  "permissions": {
+    "allow": [
+      "Bash(/work/bifrost/bin/bus-read*)",
+      "Bash(/work/bifrost/bin/bus-send*)",
+      "Bash(/work/bifrost/bin/bus-init*)"
+    ]
   }
 }
