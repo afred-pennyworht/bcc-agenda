@@ -1,0 +1,5 @@
+{
+  "enabledPlugins": {
+    "bifrost@bifrost-local": true
+  }
+}
