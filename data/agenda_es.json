@@ -34,7 +34,7 @@
         {
           "time": "09:30-09:50",
           "type": "Keynote",
-          "title": "You're The Voice",
+          "title": "The digital sovereign individual",
           "speaker": "Efrat Fenigson",
           "language": "EN"
         },
@@ -46,7 +46,7 @@
           "language": "ES",
           "block": "Bitcoin I",
           "parallel_ws": {
-            "title": "Defense — live demo",
+            "title": "Watch guard Defense for cold wallet — live demo",
             "speaker": "Wesatoshi",
             "language": "EN"
           }
@@ -80,7 +80,7 @@
         {
           "time": "11:30-11:55",
           "type": "Charla",
-          "title": "Préstamos colateralizados / Firefish",
+          "title": "Préstamos colateralizados",
           "speaker": "Losku",
           "language": "ES",
           "block": "Bitcoin II",
@@ -93,7 +93,7 @@
         {
           "time": "11:55-12:20",
           "type": "Charla",
-          "title": "Rewind Bitcoin: wallet con scripts",
+          "title": "Bitcoin Vaults: qué son, cómo funcionan y defensa ante robo y coacción",
           "speaker": "Landabaso",
           "language": "ES",
           "block": "Bitcoin II"
@@ -109,7 +109,7 @@
         {
           "time": "12:45-13:00",
           "type": "Charla",
-          "title": "Bitvault",
+          "title": "BSSL: BitVault's Trustless Key Recovery System",
           "speaker": "Riccardo Biffi",
           "language": "ES/EN",
           "block": "Bitcoin II"
@@ -137,7 +137,7 @@
         {
           "time": "14:30-14:55",
           "type": "Charla",
-          "title": "Chatcontrol",
+          "title": "Chat control and ID verification: all the ways they're trying to shut you up and grab your data",
           "speaker": "Buttercup Roberts",
           "language": "ES/EN",
           "block": "Privacidad",
@@ -155,7 +155,7 @@
           "language": "ES",
           "block": "Privacidad",
           "parallel_ws": {
-            "title": "Wallet con scripts / Rewind Bitcoin",
+            "title": "Simulación práctica: robo bajo coacción y recuperación de BTC con Rewind Bitcoin",
             "speaker": "Landabaso",
             "language": "ES"
           }
@@ -171,7 +171,7 @@
         {
           "time": "15:45-16:10",
           "type": "Charla",
-          "title": "BitBox: Hardware Wallet",
+          "title": "¿Qué buscar al comprar una billetera de hardware?",
           "speaker": "Pakovm",
           "language": "ES/EN",
           "block": "Privacidad"
@@ -189,7 +189,7 @@
           "language": "EN",
           "block": "Estructuras Paralelas",
           "parallel_ws": {
-            "title": "Puesto de Trabajo Bitcoiner",
+            "title": "Hands on un PC bitcoiner",
             "speaker": "Chavo",
             "language": "ES/EN"
           }
@@ -197,7 +197,7 @@
         {
           "time": "17:00-17:20",
           "type": "Charla",
-          "title": "Bitcoin + energía",
+          "title": "Minería con energía solar a gran escala",
           "speaker": "CSH (Natio21)",
           "language": "ES",
           "block": "Estructuras Paralelas",
@@ -230,12 +230,12 @@
         {
           "time": "09:20-09:35",
           "type": "Charla",
-          "title": "Freedomia: Visa sin KYC para gastar Bitcoin",
-          "speaker": "Fernando (Freedomia)",
+          "title": "Visa sin KYC para gastar Bitcoin",
+          "speaker": "Fernando Serer",
           "language": "ES",
           "block": "Soberanía",
           "parallel_ws": {
-            "title": "Start9 hands-on y novedades",
+            "title": "Nueva versión de StartOS y otras novedades que trae Start9 este año.",
             "speaker": "Cryptosquid",
             "language": "ES"
           }
@@ -249,14 +249,14 @@
           "block": "Soberanía",
           "parallel_ws": {
             "title": "Vexl P2P hands-on",
-            "speaker": "Vilen (Vexl)",
+            "speaker": "Viliam Klamarcík",
             "language": "EN"
           }
         },
         {
           "time": "09:55-10:15",
           "type": "Charla",
-          "title": "Soberanía en la educación + Lightning",
+          "title": "Soberanía en la educación",
           "speaker": "Karliatto",
           "language": "ES",
           "block": "Soberanía"
@@ -264,7 +264,7 @@
         {
           "time": "10:15-10:50",
           "type": "Panel",
-          "title": "Soberanía & Libertad — Entropy, Efrat, Karliatto. Mod: Buttercup Roberts",
+          "title": "Sovereignty: cypherpunk reality or wishful thinking? — Entropy, Efrat, Karliatto. Mod: Buttercup Roberts",
           "language": "EN",
           "block": "Soberanía"
         },
@@ -281,7 +281,7 @@
           "language": "ES",
           "block": "Permacultura & Soberanía Alimentaria",
           "parallel_ws": {
-            "title": "Mining + energía + Lightning",
+            "title": "Minería doméstica",
             "speaker": "CSH (Natio21)",
             "language": "ES"
           }
@@ -294,8 +294,8 @@
           "language": "ES",
           "block": "Permacultura & Soberanía Alimentaria",
           "parallel_ws": {
-            "title": "Freedomia hands-on — Visa Bitcoin sin KYC",
-            "speaker": "Fernando (Freedomia)",
+            "title": "Residencia y LLC en Próspera",
+            "speaker": "Fernando Serer",
             "language": "ES"
           }
         },
@@ -329,7 +329,7 @@
         {
           "time": "13:50-14:25",
           "type": "Panel",
-          "title": "Comunidades Bitcoin — Jordi Satlantis, Bebop, Marce, Alfre. Mod: General Kenobi",
+          "title": "Comunidades Bitcoin — Jordi Satlantis, Bebop, Marce. Mod: General Kenobi",
           "language": "ES/EN",
           "block": "Comunidades & Cierre"
         },
