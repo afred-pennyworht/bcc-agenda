@@ -11,7 +11,7 @@
     "lunch": "Dinar",
     "opening": "Acreditació i benvinguda",
     "closing": "Tancament de la conferència",
-    "bbq": "CypherPunk Barbecue — graella al foc, begudes locals, música en viu, networking",
+    "bbq": "CypherPunk Barbecue — graella al foc, begudes locals, música, networking",
     "bbq_title": "Barbacoa & Festa",
     "plenary": "Plenària",
     "room_b": "Sala B",
@@ -348,9 +348,9 @@
         },
         {
           "time": "15:00-18:30",
-          "type": "CypherPunk Barbecue — graella al foc, begudes locals, música en viu, networking",
+          "type": "CypherPunk Barbecue — graella al foc, begudes locals, música, networking",
           "title": "Barbacoa & Festa",
-          "description": "CypherPunk Barbecue — graella al foc, begudes locals, música en viu, networking"
+          "description": "CypherPunk Barbecue — graella al foc, begudes locals, música, networking"
         }
       ]
     }

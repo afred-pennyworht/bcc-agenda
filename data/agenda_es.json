@@ -11,7 +11,7 @@
     "lunch": "Comida",
     "opening": "Acreditación y bienvenida",
     "closing": "Cierre de la conferencia",
-    "bbq": "CypherPunk Barbecue — parrilla al fuego, bebidas locales, música en vivo, networking",
+    "bbq": "CypherPunk Barbecue — parrilla al fuego, bebidas locales, música, networking",
     "bbq_title": "Barbacoa & Fiesta",
     "plenary": "Plenaria",
     "room_b": "Sala B",
@@ -348,9 +348,9 @@
         },
         {
           "time": "15:00-18:30",
-          "type": "CypherPunk Barbecue — parrilla al fuego, bebidas locales, música en vivo, networking",
+          "type": "CypherPunk Barbecue — parrilla al fuego, bebidas locales, música, networking",
           "title": "Barbacoa & Fiesta",
-          "description": "CypherPunk Barbecue — parrilla al fuego, bebidas locales, música en vivo, networking"
+          "description": "CypherPunk Barbecue — parrilla al fuego, bebidas locales, música, networking"
         }
       ]
     }
