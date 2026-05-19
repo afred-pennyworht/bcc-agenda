@@ -54,9 +54,9 @@
         {
           "time": "10:15-10:40",
           "type": "Talk",
-          "title": "Adopción empresas, pagos, Ark",
+          "title": "The Cypherpunk Paradox: Using Stablecoins to Onboard the World to Bitcoin",
           "speaker": "Kilian Rausch",
-          "language": "ES/EN",
+          "language": "EN",
           "block": "Bitcoin I",
           "parallel_ws": {
             "title": "Fedimint dev workshop",
@@ -256,7 +256,7 @@
         {
           "time": "09:55-10:15",
           "type": "Talk",
-          "title": "Soberanía en la educación",
+          "title": "Educando en libertad y soberanía",
           "speaker": "Karliatto",
           "language": "ES",
           "block": "Sovereignty"
