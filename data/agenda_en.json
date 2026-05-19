@@ -11,7 +11,7 @@
     "lunch": "Lunch",
     "opening": "Registration & Welcome",
     "closing": "Conference Closing",
-    "bbq": "CypherPunk Barbecue — open fire grill, local drinks, music, networking",
+    "bbq": "CypherPunk Barbecue — open fire grill, drinks, music, networking",
     "bbq_title": "Barbecue & Party",
     "plenary": "Main Stage",
     "room_b": "Room B",
@@ -348,9 +348,9 @@
         },
         {
           "time": "15:00-18:30",
-          "type": "CypherPunk Barbecue — open fire grill, local drinks, music, networking",
+          "type": "CypherPunk Barbecue — open fire grill, drinks, music, networking",
           "title": "Barbecue & Party",
-          "description": "CypherPunk Barbecue — open fire grill, local drinks, music, networking"
+          "description": "CypherPunk Barbecue — open fire grill, drinks, music, networking"
         }
       ]
     }

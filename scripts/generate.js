@@ -45,7 +45,7 @@ const i18n = {
     lunch: "Lunch",
     opening: "Registration & Welcome",
     closing: "Conference Closing",
-    bbq: "CypherPunk Barbecue — open fire grill, local drinks, music, networking",
+    bbq: "CypherPunk Barbecue — open fire grill, drinks, music, networking",
     bbq_title: "Barbecue & Party",
     plenary: "Main Stage",
     room_b: "Room B",
