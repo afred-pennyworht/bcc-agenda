@@ -166,7 +166,12 @@
           "title": "Seguridad y privacidad puesto de trabajo",
           "speaker": "Chavo",
           "language": "ES",
-          "block": "Privacidad"
+          "block": "Privacidad",
+          "parallel_ws": {
+            "title": "Am I exposed? - Analiza la privacidad de las transacciones",
+            "speaker": "Anon Speaker",
+            "language": "ES"
+          }
         },
         {
           "time": "15:45-16:10",
