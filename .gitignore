@@ -3,3 +3,10 @@ assets/speakers/gif/*.gif
 scripts/publish.log
 test-results/
 .claude/secrets.json
+
+# Defensive: keep non-public artifacts out of this PUBLIC repo (temporary safety net;
+# non-public material is being moved to a separate private repo).
+accounting/
+*.zip
+.claude/settings.local.json
+excalidraw.log
