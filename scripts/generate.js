@@ -112,6 +112,23 @@ const blockNames = {
   },
 };
 
+// --- Helpers ---
+function slugify(s) {
+  return (s || "untitled")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function resolveId(explicit, fallbackSource, context) {
+  if (explicit) return explicit;
+  const auto = slugify(fallbackSource);
+  console.warn(`  [warn] missing id @ ${context} → auto-slug "${auto}"`);
+  return auto;
+}
+
 function readSheet(range) {
   const params = JSON.stringify({ spreadsheetId: SPREADSHEET_ID, range });
   const cmd = `gws sheets spreadsheets values get --params ${JSON.stringify(params)}`;
@@ -129,7 +146,7 @@ function parseScheduleSheet(rows) {
   let wsSlotInfo = null;
 
   for (let i = 1; i < rows.length; i++) {
-    const [hora, tipo, plenaria, speaker, idioma, salaB, speakerWs, notas] =
+    const [id, hora, tipo, plenaria, speaker, idioma, salaB, speakerWs, notas, idWs] =
       rows[i].map((c) => (c || "").trim());
 
     if (!hora && !tipo && !plenaria) continue;
@@ -144,37 +161,38 @@ function parseScheduleSheet(rows) {
 
     // Break
     if (tipo && tipo.includes("BREAK")) {
-      sessions.push({ time: hora, type: "break" });
+      sessions.push({ id: resolveId(id, `break-${hora}`, hora), time: hora, type: "break" });
       continue;
     }
 
     // Lunch
     if (tipo && tipo.includes("COMIDA")) {
-      sessions.push({ time: hora, type: "lunch", notes: plenaria });
+      sessions.push({ id: resolveId(id, "lunch", hora), time: hora, type: "lunch", notes: plenaria });
       continue;
     }
 
     // BBQ
     if (tipo && tipo.includes("BBQ")) {
-      sessions.push({ time: hora, type: "bbq", description: plenaria });
+      sessions.push({ id: resolveId(id, "bbq", hora), time: hora, type: "bbq", description: plenaria });
       continue;
     }
 
     // Opening
     if (tipo === "Apertura") {
-      sessions.push({ time: hora, type: "opening" });
+      sessions.push({ id: resolveId(id, "opening", hora), time: hora, type: "opening" });
       continue;
     }
 
     // Closing
     if (tipo === "Cierre") {
-      sessions.push({ time: hora, type: "closing" });
+      sessions.push({ id: resolveId(id, "closing", hora), time: hora, type: "closing" });
       continue;
     }
 
     // Keynote / Talk / Panel
     if (tipo === "Keynote" || tipo === "Charla" || tipo === "Panel") {
       const session = {
+        id: resolveId(id, plenaria, `${hora} ${plenaria}`),
         time: hora,
         type: tipo === "Keynote" ? "keynote" : tipo === "Charla" ? "talk" : "panel",
         title: plenaria,
@@ -192,6 +210,7 @@ function parseScheduleSheet(rows) {
           .replace(/\s+/g, " ")
           .trim();
         session.parallel_ws = {
+          id: resolveId(idWs, salaB, `${hora} WS ${salaB}`),
           title: salaB.replace(/^WS-\d+[a-z]: /, ""),
           speaker: speakerWs || null,
           language: cleanedLang || null,
@@ -219,7 +238,7 @@ function buildLocalizedAgenda(lang, fridaySessions, saturdaySessions) {
   }
 
   function localizeSession(s) {
-    const out = { time: s.time, type: localizeType(s.type) };
+    const out = { id: s.id, time: s.time, type: localizeType(s.type) };
 
     if (s.type === "opening") {
       out.title = labels.opening;
@@ -240,6 +259,7 @@ function buildLocalizedAgenda(lang, fridaySessions, saturdaySessions) {
       // sponsored not exported to widget
       if (s.parallel_ws) {
         out.parallel_ws = {
+          id: s.parallel_ws.id,
           title: s.parallel_ws.title,
           speaker: s.parallel_ws.speaker,
           language: s.parallel_ws.language,
@@ -270,12 +290,12 @@ function buildLocalizedAgenda(lang, fridaySessions, saturdaySessions) {
 
 // --- Main ---
 console.log("Reading Viernes 29...");
-const fridayRows = readSheet("'Viernes 29'!A1:H50");
+const fridayRows = readSheet("'Viernes 29'!A1:J50");
 const fridaySessions = parseScheduleSheet(fridayRows);
 console.log(`  ${fridaySessions.length} sessions parsed`);
 
 console.log("Reading Sábado 30...");
-const saturdayRows = readSheet("'Sábado 30'!A1:H50");
+const saturdayRows = readSheet("'Sábado 30'!A1:J50");
 const saturdaySessions = parseScheduleSheet(saturdayRows);
 console.log(`  ${saturdaySessions.length} sessions parsed`);
 

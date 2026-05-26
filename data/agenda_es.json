@@ -27,11 +27,13 @@
       "label": "Viernes 29 de Mayo",
       "sessions": [
         {
+          "id": "fri-opening",
           "time": "09:00-09:30",
           "type": "Acreditación y bienvenida",
           "title": "Acreditación y bienvenida"
         },
         {
+          "id": "fri-keynote-fenigson",
           "time": "09:30-09:50",
           "type": "Keynote",
           "title": "The digital sovereign individual",
@@ -39,6 +41,7 @@
           "language": "EN"
         },
         {
+          "id": "fri-charla-counterweight",
           "time": "09:50-10:15",
           "type": "Charla",
           "title": "El Galt's Gulch ya está aquí",
@@ -46,12 +49,14 @@
           "language": "ES",
           "block": "Bitcoin I",
           "parallel_ws": {
+            "id": "fri-ws-wesatoshi",
             "title": "Watch guard Defense for cold wallet — live demo",
             "speaker": "Wesatoshi",
             "language": "EN"
           }
         },
         {
+          "id": "fri-charla-kilian",
           "time": "10:15-10:40",
           "type": "Charla",
           "title": "The Cypherpunk Paradox: Using Stablecoins to Onboard the World to Bitcoin",
@@ -59,12 +64,14 @@
           "language": "EN",
           "block": "Bitcoin I",
           "parallel_ws": {
+            "id": "fri-ws-oz",
             "title": "Fedimint dev workshop",
             "speaker": "Oz",
             "language": "ES/EN"
           }
         },
         {
+          "id": "fri-charla-marcellus",
           "time": "10:40-11:05",
           "type": "Charla",
           "title": "BIP-110 y el fork de Bitcoin",
@@ -73,11 +80,13 @@
           "block": "Bitcoin I"
         },
         {
+          "id": "fri-break-1",
           "time": "11:05-11:30",
           "type": "Descanso",
           "title": "Descanso"
         },
         {
+          "id": "fri-charla-losku",
           "time": "11:30-11:55",
           "type": "Charla",
           "title": "Préstamos colateralizados",
@@ -85,12 +94,14 @@
           "language": "ES",
           "block": "Bitcoin II",
           "parallel_ws": {
+            "id": "fri-ws-marcellus",
             "title": "Massive Virtual Mining",
             "speaker": "Marcellus",
             "language": "ES"
           }
         },
         {
+          "id": "fri-charla-landabaso",
           "time": "11:55-12:20",
           "type": "Charla",
           "title": "Bitcoin Vaults: qué son, cómo funcionan y defensa ante robo y coacción",
@@ -99,6 +110,7 @@
           "block": "Bitcoin II"
         },
         {
+          "id": "fri-charla-biffi",
           "time": "12:20-12:35",
           "type": "Charla",
           "title": "BSSL: BitVault's Trustless Key Recovery System",
@@ -107,6 +119,7 @@
           "block": "Bitcoin II"
         },
         {
+          "id": "fri-charla-citadelb",
           "time": "12:35-12:50",
           "type": "Charla",
           "title": "Custodia Colaborativa con Citadel B",
@@ -115,6 +128,7 @@
           "block": "Bitcoin II"
         },
         {
+          "id": "fri-panel-bitcoin-economy",
           "time": "12:50-13:25",
           "type": "Panel",
           "title": "Bitcoin Economy — Dr Khushboo, Kilian, Alberto Mera. Mod: Efrat Fenigson",
@@ -122,11 +136,13 @@
           "block": "Bitcoin II"
         },
         {
+          "id": "fri-lunch",
           "time": "13:25-14:30",
           "type": "Comida",
           "title": "Comida"
         },
         {
+          "id": "fri-charla-bitmaker",
           "time": "14:30-14:55",
           "type": "Charla",
           "title": "La minería de llaves",
@@ -134,12 +150,14 @@
           "language": "ES",
           "block": "Privacidad",
           "parallel_ws": {
+            "id": "fri-ws-landabaso",
             "title": "Simulación práctica: robo bajo coacción y recuperación de BTC con Rewind Bitcoin",
             "speaker": "Landabaso",
             "language": "ES"
           }
         },
         {
+          "id": "fri-charla-buttercup",
           "time": "14:55-15:20",
           "type": "Charla",
           "title": "Chat control and ID verification: all the ways they're trying to shut you up and grab your data",
@@ -147,12 +165,14 @@
           "language": "ES/EN",
           "block": "Privacidad",
           "parallel_ws": {
+            "id": "fri-ws-bitmaker",
             "title": "Pleb Mining hands-on",
             "speaker": "Bitmaker",
             "language": "ES"
           }
         },
         {
+          "id": "fri-charla-anon",
           "time": "15:20-15:45",
           "type": "Charla",
           "title": "Privacidad en Bitcoin y opciones actuales",
@@ -161,6 +181,7 @@
           "block": "Privacidad"
         },
         {
+          "id": "fri-charla-chavo",
           "time": "15:45-16:10",
           "type": "Charla",
           "title": "Seguridad y privacidad puesto de trabajo",
@@ -168,12 +189,14 @@
           "language": "ES",
           "block": "Privacidad",
           "parallel_ws": {
+            "id": "fri-ws-anon",
             "title": "Am I exposed? - Analiza la privacidad de las transacciones",
             "speaker": "Anon Speaker",
             "language": "ES"
           }
         },
         {
+          "id": "fri-charla-pakovm",
           "time": "16:10-16:35",
           "type": "Charla",
           "title": "¿Qué buscar al comprar una billetera de hardware?",
@@ -182,11 +205,13 @@
           "block": "Privacidad"
         },
         {
+          "id": "fri-break-2",
           "time": "16:35-17:00",
           "type": "Descanso",
           "title": "Descanso"
         },
         {
+          "id": "fri-charla-hillebrand",
           "time": "17:00-17:25",
           "type": "Charla",
           "title": "Cypherpunk Countermeasures (Q&A)",
@@ -194,12 +219,14 @@
           "language": "EN",
           "block": "Estructuras Paralelas",
           "parallel_ws": {
+            "id": "fri-ws-chavo",
             "title": "Hands on un PC bitcoiner",
             "speaker": "Chavo",
             "language": "ES/EN"
           }
         },
         {
+          "id": "fri-charla-csh",
           "time": "17:25-17:45",
           "type": "Charla",
           "title": "Minería con energía solar a gran escala",
@@ -207,12 +234,14 @@
           "language": "ES",
           "block": "Estructuras Paralelas",
           "parallel_ws": {
+            "id": "fri-ws-pakovm",
             "title": "BitBox hands-on",
             "speaker": "Pakovm",
             "language": "ES/EN"
           }
         },
         {
+          "id": "fri-panel-parallel-structures",
           "time": "17:45-18:25",
           "type": "Panel",
           "title": "Parallel Structures — Lunaticoin, Entropy, Counterweight, Oz. Mod: General Kenobi",
@@ -226,6 +255,7 @@
       "label": "Sábado 30 de Mayo",
       "sessions": [
         {
+          "id": "sat-keynote-mera",
           "time": "09:00-09:20",
           "type": "Keynote",
           "title": "Economía Bitcoin, escenarios macro",
@@ -233,6 +263,7 @@
           "language": "ES"
         },
         {
+          "id": "sat-charla-serer",
           "time": "09:20-09:35",
           "type": "Charla",
           "title": "Visa sin KYC para gastar Bitcoin",
@@ -240,12 +271,14 @@
           "language": "ES",
           "block": "Soberanía",
           "parallel_ws": {
+            "id": "sat-ws-cryptosquid",
             "title": "Nueva versión de StartOS y otras novedades que trae Start9 este año.",
             "speaker": "Cryptosquid",
             "language": "ES"
           }
         },
         {
+          "id": "sat-charla-entropy",
           "time": "09:35-09:55",
           "type": "Charla",
           "title": "Agorismo en la era de Bitcoin",
@@ -253,12 +286,14 @@
           "language": "ES",
           "block": "Soberanía",
           "parallel_ws": {
+            "id": "sat-ws-viliam",
             "title": "Vexl P2P hands-on",
             "speaker": "Viliam Klamarcík",
             "language": "EN"
           }
         },
         {
+          "id": "sat-charla-karliatto",
           "time": "09:55-10:15",
           "type": "Charla",
           "title": "Educando en libertad y soberanía",
@@ -267,6 +302,7 @@
           "block": "Soberanía"
         },
         {
+          "id": "sat-panel-sovereignty",
           "time": "10:15-10:50",
           "type": "Panel",
           "title": "Sovereignty: cypherpunk reality or wishful thinking? — Entropy, Efrat, Karliatto. Mod: Buttercup Roberts",
@@ -274,11 +310,13 @@
           "block": "Soberanía"
         },
         {
+          "id": "sat-break-1",
           "time": "10:50-11:15",
           "type": "Descanso",
           "title": "Descanso"
         },
         {
+          "id": "sat-charla-jacksper",
           "time": "11:15-11:40",
           "type": "Charla",
           "title": "Sobres Gordianos: un salto en la implementación de Bluetooth",
@@ -286,12 +324,14 @@
           "language": "ES",
           "block": "Permacultura & Soberanía Alimentaria",
           "parallel_ws": {
+            "id": "sat-ws-csh",
             "title": "Minería doméstica",
             "speaker": "CSH (Natio21)",
             "language": "ES"
           }
         },
         {
+          "id": "sat-charla-orange-bamboo",
           "time": "11:40-12:05",
           "type": "Charla",
           "title": "Converting Waste to Bitcoin",
@@ -299,12 +339,14 @@
           "language": "ES",
           "block": "Permacultura & Soberanía Alimentaria",
           "parallel_ws": {
+            "id": "sat-ws-serer",
             "title": "Residencia y LLC en Próspera",
             "speaker": "Fernando Serer",
             "language": "ES"
           }
         },
         {
+          "id": "sat-panel-ready-to-prepare",
           "time": "12:05-12:40",
           "type": "Panel",
           "title": "Ready to Prepare — Cryptosquid, Bebop, Stoa Otter. Mod: Entropy",
@@ -312,11 +354,13 @@
           "block": "Permacultura & Soberanía Alimentaria"
         },
         {
+          "id": "sat-break-2",
           "time": "12:40-13:00",
           "type": "Descanso",
           "title": "Descanso"
         },
         {
+          "id": "sat-panel-bitcoin-psicodelicos",
           "time": "13:00-13:25",
           "type": "Panel",
           "title": "Tecnologías de empoderamiento: Bitcoin y Psicodélicos — Soy Tierra Fertil, Guerrilla",
@@ -324,6 +368,7 @@
           "block": "Comunidades & Cierre"
         },
         {
+          "id": "sat-charla-marce",
           "time": "13:25-13:50",
           "type": "Charla",
           "title": "El bitcoiner de la familia — adopción para normies",
@@ -332,6 +377,7 @@
           "block": "Comunidades & Cierre"
         },
         {
+          "id": "sat-panel-comunidades",
           "time": "13:50-14:25",
           "type": "Panel",
           "title": "Comunidades Bitcoin — Jordi Satlantis, Bebop, Marce. Mod: General Kenobi",
@@ -339,6 +385,7 @@
           "block": "Comunidades & Cierre"
         },
         {
+          "id": "sat-charla-lunaticoin",
           "time": "14:25-14:55",
           "type": "Charla",
           "title": "Cierre — Lunaticoin",
@@ -347,11 +394,13 @@
           "block": "Comunidades & Cierre"
         },
         {
+          "id": "sat-closing",
           "time": "14:55-15:00",
           "type": "Cierre de la conferencia",
           "title": "Cierre de la conferencia"
         },
         {
+          "id": "sat-bbq",
           "time": "15:00-18:30",
           "type": "CypherPunk Barbecue — parrilla al fuego, bebidas locales, música, networking",
           "title": "Barbacoa & Fiesta",
