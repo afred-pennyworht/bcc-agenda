@@ -99,15 +99,7 @@
           "block": "Bitcoin II"
         },
         {
-          "time": "12:20-12:45",
-          "type": "Talk",
-          "title": "Pleb Mining / NerdMiner",
-          "speaker": "Bitmaker",
-          "language": "ES",
-          "block": "Bitcoin II"
-        },
-        {
-          "time": "12:45-13:00",
+          "time": "12:20-12:35",
           "type": "Talk",
           "title": "BSSL: BitVault's Trustless Key Recovery System",
           "speaker": "Riccardo Biffi",
@@ -115,7 +107,7 @@
           "block": "Bitcoin II"
         },
         {
-          "time": "13:00-13:15",
+          "time": "12:35-12:50",
           "type": "Talk",
           "title": "Custodia Colaborativa con Citadel B",
           "speaker": "Antonio B + Marcellus",
@@ -123,19 +115,32 @@
           "block": "Bitcoin II"
         },
         {
-          "time": "13:15-13:50",
+          "time": "12:50-13:25",
           "type": "Panel",
           "title": "Bitcoin Economy — Dr Khushboo, Kilian, Alberto Mera. Mod: Efrat Fenigson",
           "language": "EN",
           "block": "Bitcoin II"
         },
         {
-          "time": "13:50-14:30",
+          "time": "13:25-14:30",
           "type": "Lunch",
           "title": "Lunch"
         },
         {
           "time": "14:30-14:55",
+          "type": "Talk",
+          "title": "La minería de llaves",
+          "speaker": "Bitmaker",
+          "language": "ES",
+          "block": "Privacy",
+          "parallel_ws": {
+            "title": "Simulación práctica: robo bajo coacción y recuperación de BTC con Rewind Bitcoin",
+            "speaker": "Landabaso",
+            "language": "ES"
+          }
+        },
+        {
+          "time": "14:55-15:20",
           "type": "Talk",
           "title": "Chat control and ID verification: all the ways they're trying to shut you up and grab your data",
           "speaker": "Buttercup Roberts",
@@ -148,20 +153,15 @@
           }
         },
         {
-          "time": "14:55-15:20",
+          "time": "15:20-15:45",
           "type": "Talk",
           "title": "Privacidad en Bitcoin y opciones actuales",
           "speaker": "Anon Speaker",
           "language": "ES",
-          "block": "Privacy",
-          "parallel_ws": {
-            "title": "Simulación práctica: robo bajo coacción y recuperación de BTC con Rewind Bitcoin",
-            "speaker": "Landabaso",
-            "language": "ES"
-          }
+          "block": "Privacy"
         },
         {
-          "time": "15:20-15:45",
+          "time": "15:45-16:10",
           "type": "Talk",
           "title": "Seguridad y privacidad puesto de trabajo",
           "speaker": "Chavo",
@@ -174,7 +174,7 @@
           }
         },
         {
-          "time": "15:45-16:10",
+          "time": "16:10-16:35",
           "type": "Talk",
           "title": "¿Qué buscar al comprar una billetera de hardware?",
           "speaker": "Pakovm",
@@ -182,12 +182,12 @@
           "block": "Privacy"
         },
         {
-          "time": "16:10-16:35",
+          "time": "16:35-17:00",
           "type": "Break",
           "title": "Break"
         },
         {
-          "time": "16:35-17:00",
+          "time": "17:00-17:25",
           "type": "Talk",
           "title": "Cypherpunk Countermeasures (Q&A)",
           "speaker": "Max Hillebrand",
@@ -200,7 +200,7 @@
           }
         },
         {
-          "time": "17:00-17:20",
+          "time": "17:25-17:45",
           "type": "Talk",
           "title": "Minería con energía solar a gran escala",
           "speaker": "CSH (Natio21)",
@@ -213,7 +213,7 @@
           }
         },
         {
-          "time": "17:20-18:00",
+          "time": "17:45-18:25",
           "type": "Panel",
           "title": "Parallel Structures — Lunaticoin, Entropy, Counterweight, Oz. Mod: General Kenobi",
           "language": "ES/EN",
