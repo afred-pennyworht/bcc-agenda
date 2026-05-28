@@ -267,7 +267,7 @@
           "time": "09:20-09:35",
           "type": "Xerrada",
           "title": "Visa sin KYC para gastar Bitcoin",
-          "speaker": "Fernando Serer",
+          "speaker": "Losku",
           "language": "ES",
           "block": "Sobirania",
           "parallel_ws": {
@@ -337,13 +337,7 @@
           "title": "Converting Waste to Bitcoin",
           "speaker": "Orange Bamboo",
           "language": "ES",
-          "block": "Permacultura & Sobirania Alimentària",
-          "parallel_ws": {
-            "id": "sat-ws-serer",
-            "title": "Residencia y LLC en Próspera",
-            "speaker": "Fernando Serer",
-            "language": "ES"
-          }
+          "block": "Permacultura & Sobirania Alimentària"
         },
         {
           "id": "sat-panel-ready-to-prepare",
