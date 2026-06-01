@@ -9,4 +9,23 @@ test-results/
 accounting/
 *.zip
 .claude/settings.local.json
+.claude/scheduled_tasks.lock
 excalidraw.log
+
+# Operational assets (sources viven en GDrive; pesados, no van al widget repo).
+assets/brand/
+assets/fonts/
+assets/pictures/
+assets/speakers/pics/
+assets/sponsors/
+assets/video/
+
+# Sting pipeline (vive en repo dedicado bcc2026-stings).
+remotion/
+
+# Operational inbox (design handoffs, photo drops — privado).
+inbox/
+
+# Drafts pre-evento (históricos, archivados localmente).
+BCC2026_Sponsors_Anunciados.txt
+nostr_drafts_sponsors.md

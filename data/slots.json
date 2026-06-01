@@ -1,0 +1,350 @@
+{
+  "_meta": {
+    "generated": "2026-05-28",
+    "source": "Cross of data/agenda_es.json (slot ids/times/titles) + Google Sheet 1K8u2cODCrJgyvD67fQZ8WD5WwZQcFnjtrKkEL_rd0_I (canonical speaker names) + assets/speakers/pics/ (photo files).",
+    "scope": "29 plenary slots: 21 charlas + 6 paneles + 2 keynotes. Workshops, breaks, lunch, opening, closing, BBQ NOT rendered.",
+    "render_status_legend": {
+      "renderable": "all assets present, will render"
+    },
+    "asset_drop_2026_05_28": "Photos delivered for Max Hillebrand + CSH (Natio21) + Arkad (revealed as the prev 'Anon Speaker') + Citadel ₿ logo (treated like Orange Bamboo: render as charla, single speaker = 'Citadel ₿'). All 29 slots now renderable."
+  },
+  "slots": [
+    {
+      "slot_id": "fri-keynote-fenigson",
+      "slot_type": "keynote",
+      "slot_time": "09:30",
+      "slot_day": "VIERNES",
+      "talk_title": "The digital sovereign individual",
+      "speakers": [
+        { "name": "Efrat Fenigson", "photo_path": "speakers/Efrat_Fenigson.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-counterweight",
+      "slot_type": "charla",
+      "slot_time": "09:50",
+      "slot_day": "VIERNES",
+      "talk_title": "El Galt's Gulch ya está aquí",
+      "speakers": [
+        { "name": "Counterweight", "photo_path": "speakers/Counterweight.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-kilian",
+      "slot_type": "charla",
+      "slot_time": "10:15",
+      "slot_day": "VIERNES",
+      "talk_title": "The Cypherpunk Paradox: Using Stablecoins to Onboard the World to Bitcoin",
+      "speakers": [
+        { "name": "Kilian Rausch", "photo_path": "speakers/Kilian_Rausch.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-marcellus",
+      "slot_type": "charla",
+      "slot_time": "10:40",
+      "slot_day": "VIERNES",
+      "talk_title": "BIP-110 y el fork de Bitcoin",
+      "speakers": [
+        { "name": "Marcellus", "photo_path": "speakers/Marcellus.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-losku",
+      "slot_type": "charla",
+      "slot_time": "11:30",
+      "slot_day": "VIERNES",
+      "talk_title": "Préstamos colateralizados",
+      "speakers": [
+        { "name": "Losku", "photo_path": "speakers/Losku.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-landabaso",
+      "slot_type": "charla",
+      "slot_time": "11:55",
+      "slot_day": "VIERNES",
+      "talk_title": "Bitcoin Vaults: qué son, cómo funcionan y defensa ante robo y coacción",
+      "speakers": [
+        { "name": "Landabaso", "photo_path": "speakers/Landabaso.png", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-biffi",
+      "slot_type": "charla",
+      "slot_time": "12:20",
+      "slot_day": "VIERNES",
+      "talk_title": "BSSL: BitVault's Trustless Key Recovery System",
+      "speakers": [
+        { "name": "Riccardo Biffi", "photo_path": "speakers/Riccardo_Biffi.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-citadelb",
+      "slot_type": "charla",
+      "slot_time": "12:35",
+      "slot_day": "VIERNES",
+      "talk_title": "Custodia Colaborativa con Citadel B",
+      "speakers": [
+        { "name": "Citadel ₿", "photo_path": "speakers/Citadel_B.svg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-panel-bitcoin-economy",
+      "slot_type": "panel",
+      "slot_time": "12:50",
+      "slot_day": "VIERNES",
+      "talk_title": "Bitcoin Economy",
+      "speakers": [
+        { "name": "Dr Khushboo Kullar", "photo_path": "speakers/Khushboo_Kullar.jpg", "role": "speaker" },
+        { "name": "Kilian Rausch", "photo_path": "speakers/Kilian_Rausch.jpg", "role": "speaker" },
+        { "name": "Alberto Mera", "photo_path": "speakers/Alberto_Mera.jpg", "role": "speaker" },
+        { "name": "Efrat Fenigson", "photo_path": "speakers/Efrat_Fenigson.jpg", "role": "moderator" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-bitmaker",
+      "slot_type": "charla",
+      "slot_time": "14:30",
+      "slot_day": "VIERNES",
+      "talk_title": "La minería de llaves",
+      "speakers": [
+        { "name": "Bitmaker", "photo_path": "speakers/Bitmaker.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-buttercup",
+      "slot_type": "charla",
+      "slot_time": "14:55",
+      "slot_day": "VIERNES",
+      "talk_title": "Chat control and ID verification: all the ways they're trying to shut you up and grab your data",
+      "speakers": [
+        { "name": "Buttercup Roberts", "photo_path": "speakers/Buttercup_Roberts.jpeg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-anon",
+      "slot_type": "charla",
+      "slot_time": "15:20",
+      "slot_day": "VIERNES",
+      "talk_title": "Privacidad en Bitcoin y opciones actuales",
+      "speakers": [
+        { "name": "Arkad", "photo_path": "speakers/Arkad.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-chavo",
+      "slot_type": "charla",
+      "slot_time": "15:45",
+      "slot_day": "VIERNES",
+      "talk_title": "Seguridad y privacidad puesto de trabajo",
+      "speakers": [
+        { "name": "Chavo", "photo_path": "speakers/Chavo.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-pakovm",
+      "slot_type": "charla",
+      "slot_time": "16:10",
+      "slot_day": "VIERNES",
+      "talk_title": "¿Qué buscar al comprar una billetera de hardware?",
+      "speakers": [
+        { "name": "Pakovm", "photo_path": "speakers/Pakovm.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-hillebrand",
+      "slot_type": "charla",
+      "slot_time": "17:00",
+      "slot_day": "VIERNES",
+      "talk_title": "Cypherpunk Countermeasures (Q&A)",
+      "speakers": [
+        { "name": "Max Hillebrand", "photo_path": "speakers/Max_Hillebrand.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-charla-csh",
+      "slot_type": "charla",
+      "slot_time": "17:25",
+      "slot_day": "VIERNES",
+      "talk_title": "Minería con energía solar a gran escala",
+      "speakers": [
+        { "name": "CSH (Natio21)", "photo_path": "speakers/CSH.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "fri-panel-parallel-structures",
+      "slot_type": "panel",
+      "slot_time": "17:45",
+      "slot_day": "VIERNES",
+      "talk_title": "Parallel Structures",
+      "speakers": [
+        { "name": "Lunaticoin", "photo_path": "speakers/Lunaticoin.jpg", "role": "speaker" },
+        { "name": "Entropy", "photo_path": "speakers/Entropy.jpg", "role": "speaker" },
+        { "name": "Counterweight", "photo_path": "speakers/Counterweight.jpg", "role": "speaker" },
+        { "name": "Oz", "photo_path": "speakers/Oz.jpg", "role": "speaker" },
+        { "name": "General Kenobi", "photo_path": "speakers/General_Kenobi.jpg", "role": "moderator" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "sat-keynote-mera",
+      "slot_type": "keynote",
+      "slot_time": "09:00",
+      "slot_day": "SÁBADO",
+      "talk_title": "Economía Bitcoin, escenarios macro",
+      "speakers": [
+        { "name": "Alberto Mera", "photo_path": "speakers/Alberto_Mera.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "sat-charla-serer",
+      "slot_type": "charla",
+      "slot_time": "09:20",
+      "slot_day": "SÁBADO",
+      "talk_title": "Visa sin KYC para gastar Bitcoin",
+      "speakers": [
+        { "name": "Losku", "photo_path": "speakers/Losku.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable",
+      "speaker_change_note": "2026-05-28: Fernando Serer dropped, Losku asume la charla. Slot_id preserved per stability convention (commit 535734e)."
+    },
+    {
+      "slot_id": "sat-charla-entropy",
+      "slot_type": "charla",
+      "slot_time": "09:35",
+      "slot_day": "SÁBADO",
+      "talk_title": "Agorismo en la era de Bitcoin",
+      "speakers": [
+        { "name": "Entropy", "photo_path": "speakers/Entropy.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "sat-charla-karliatto",
+      "slot_type": "charla",
+      "slot_time": "09:55",
+      "slot_day": "SÁBADO",
+      "talk_title": "Educando en libertad y soberanía",
+      "speakers": [
+        { "name": "Karliatto", "photo_path": "speakers/Karliatto.png", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "sat-panel-sovereignty",
+      "slot_type": "panel",
+      "slot_time": "10:15",
+      "slot_day": "SÁBADO",
+      "talk_title": "Sovereignty: cypherpunk reality or wishful thinking?",
+      "speakers": [
+        { "name": "Entropy", "photo_path": "speakers/Entropy.jpg", "role": "speaker" },
+        { "name": "Efrat Fenigson", "photo_path": "speakers/Efrat_Fenigson.jpg", "role": "speaker" },
+        { "name": "Karliatto", "photo_path": "speakers/Karliatto.png", "role": "speaker" },
+        { "name": "Buttercup Roberts", "photo_path": "speakers/Buttercup_Roberts.jpeg", "role": "moderator" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "sat-charla-jacksper",
+      "slot_type": "charla",
+      "slot_time": "11:15",
+      "slot_day": "SÁBADO",
+      "talk_title": "Sobres Gordianos: un salto en la implementación de Bluetooth",
+      "speakers": [
+        { "name": "Jacksper", "photo_path": "speakers/Jacksper.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "sat-charla-orange-bamboo",
+      "slot_type": "charla",
+      "slot_time": "11:40",
+      "slot_day": "SÁBADO",
+      "talk_title": "Converting Waste to Bitcoin",
+      "speakers": [
+        { "name": "Orange Bamboo", "photo_path": "speakers/Orange_Bamboo.svg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "sat-panel-ready-to-prepare",
+      "slot_type": "panel",
+      "slot_time": "12:05",
+      "slot_day": "SÁBADO",
+      "talk_title": "Ready to Prepare",
+      "speakers": [
+        { "name": "Cryptosquid", "photo_path": "speakers/Cryptosquid.png", "role": "speaker" },
+        { "name": "Bebop", "photo_path": "speakers/Bebop.png", "role": "speaker" },
+        { "name": "Stoa Otter", "photo_path": "speakers/Stoa_Otter.png", "role": "speaker" },
+        { "name": "Entropy", "photo_path": "speakers/Entropy.jpg", "role": "moderator" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "sat-panel-bitcoin-psicodelicos",
+      "slot_type": "panel",
+      "slot_time": "13:00",
+      "slot_day": "SÁBADO",
+      "talk_title": "Tecnologías de empoderamiento: Bitcoin y Psicodélicos",
+      "speakers": [
+        { "name": "Soy Tierra Fertil", "photo_path": "speakers/Soy_Tierra_Fertil.png", "role": "speaker" },
+        { "name": "Guerrilla", "photo_path": "speakers/Guerrilla.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "sat-charla-marce",
+      "slot_type": "charla",
+      "slot_time": "13:25",
+      "slot_day": "SÁBADO",
+      "talk_title": "El bitcoiner de la familia — adopción para normies",
+      "speakers": [
+        { "name": "Marce", "photo_path": "speakers/Marce.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "sat-panel-comunidades",
+      "slot_type": "panel",
+      "slot_time": "13:50",
+      "slot_day": "SÁBADO",
+      "talk_title": "Comunidades Bitcoin",
+      "speakers": [
+        { "name": "Jordi Satlantis", "photo_path": "speakers/Jordi_Satlantis.jpg", "role": "speaker" },
+        { "name": "Bebop", "photo_path": "speakers/Bebop.png", "role": "speaker" },
+        { "name": "Marce", "photo_path": "speakers/Marce.jpg", "role": "speaker" },
+        { "name": "General Kenobi", "photo_path": "speakers/General_Kenobi.jpg", "role": "moderator" }
+      ],
+      "render_status": "renderable"
+    },
+    {
+      "slot_id": "sat-charla-lunaticoin",
+      "slot_type": "charla",
+      "slot_time": "14:25",
+      "slot_day": "SÁBADO",
+      "talk_title": "Cierre — Lunaticoin",
+      "speakers": [
+        { "name": "Lunaticoin", "photo_path": "speakers/Lunaticoin.jpg", "role": "speaker" }
+      ],
+      "render_status": "renderable"
+    }
+  ]
+}
