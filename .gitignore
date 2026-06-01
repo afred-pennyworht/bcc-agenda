@@ -4,10 +4,16 @@ scripts/publish.log
 test-results/
 .claude/secrets.json
 
-# Defensive: keep non-public artifacts out of this PUBLIC repo (temporary safety net;
-# non-public material is being moved to a separate private repo).
+# Canonical en repo privado bcc-private (github.com/afred-pennyworht/bcc-private,
+# git-crypt). Estas reglas se mantienen como defensa-en-profundidad por si
+# alguien re-copia material aquí: nunca debe commitearse al repo público.
 accounting/
+inbox/
+BCC2026_Sponsors_Anunciados.txt
+nostr_drafts_sponsors.md
 *.zip
+
+# Local-only.
 .claude/settings.local.json
 .claude/scheduled_tasks.lock
 excalidraw.log
@@ -22,10 +28,3 @@ assets/video/
 
 # Sting pipeline (vive en repo dedicado bcc2026-stings).
 remotion/
-
-# Operational inbox (design handoffs, photo drops — privado).
-inbox/
-
-# Drafts pre-evento (históricos, archivados localmente).
-BCC2026_Sponsors_Anunciados.txt
-nostr_drafts_sponsors.md
