@@ -5,13 +5,8 @@ UPLOAD_URL="https://nostr.build/api/v2/nip96/upload"
 GIF_DIR="/work/bcc2026/assets/sponsors/gif"
 OUTPUT_FILE="/work/bcc2026/assets/sponsors/gif_upload_urls.txt"
 
-# Lazy-fetch nsec from secrets v2 (ADR-005: no secrets via argv).
-# Passed to nak via $NOSTR_SECRET_KEY env, not --sec flag.
-NSEC=$(/work/secrets/secrets get hot/bcc_nostr_nsec)
-if [ -z "$NSEC" ]; then
-  echo "ERROR: secret not available (is secrets unlocked?)"
-  exit 1
-fi
+# Nsec injected per-iteration into the nak subprocess via `secrets exec` (ADR-024).
+# Wrapper never sees the value.
 
 : > "$OUTPUT_FILE"
 
@@ -23,7 +18,7 @@ for file in "$GIF_DIR"/*.gif; do
   esac
   echo "Uploading: $filename"
 
-  AUTH_EVENT=$(NOSTR_SECRET_KEY="$NSEC" nak event \
+  AUTH_EVENT=$(/work/secrets/secrets exec --env NOSTR_SECRET_KEY=hot/bcc_nostr_nsec -- nak event \
     -k 27235 \
     -t u="$UPLOAD_URL" \
     -t method="POST" \

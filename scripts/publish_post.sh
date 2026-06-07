@@ -9,13 +9,8 @@ POSTS_FILE="$SCRIPTS_DIR/posts.json"
 QUEUE_FILE="$SCRIPTS_DIR/queue.txt"
 LOG_FILE="$SCRIPTS_DIR/publish.log"
 
-# Lazy-fetch nsec from secrets v2 (ADR-005: no secrets via argv).
-# Passed to nak via $NOSTR_SECRET_KEY env, not --sec flag.
-NSEC=$(/work/secrets/secrets get hot/bcc_nostr_nsec)
-if [ -z "$NSEC" ]; then
-  echo "ERROR: NSEC not available (is secrets unlocked?)" | tee -a "$LOG_FILE"
-  exit 1
-fi
+# Nsec injected only into nak subprocess via `secrets exec` (ADR-024).
+# Wrapper never sees the value; nak reads $NOSTR_SECRET_KEY from its env.
 
 RELAYS=(
   "wss://relay.damus.io"
@@ -80,8 +75,8 @@ done
 
 # Publish kind 1 event with nak
 # -c @file reads content from file
-# nsec via $NOSTR_SECRET_KEY env (no argv leak)
-RESULT=$(NOSTR_SECRET_KEY="$NSEC" nak event \
+# nsec via $NOSTR_SECRET_KEY env injected by `secrets exec` (ADR-024)
+RESULT=$(/work/secrets/secrets exec --env NOSTR_SECRET_KEY=hot/bcc_nostr_nsec -- nak event \
   -k 1 \
   -c "@$TMPFILE" \
   -t r="$VIDEO_URL" \
